@@ -16,7 +16,8 @@ let main = async() => {
   app.use((req, res, next) => {req.client = client; next()}) // Pass client to Routes
   // app.use((req, res, next) => {console.log("Started!"); next()})
   // app.use((req, res, next) => {console.log("Finished!"); next()})
-  app.use(require("./routes"))
+  let routes = require("./routes")
+  app.use(routes)
   console.log(`Server listening on ${PORT}`)
 }
 

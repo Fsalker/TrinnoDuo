@@ -3,6 +3,7 @@ module.exports = {
     await client.query(`DROP TABLE IF EXISTS users`)
     await client.query(`DROP TABLE IF EXISTS boards`)
     await client.query(`DROP TABLE IF EXISTS board_lists`)
+    await client.query(`DROP TABLE IF EXISTS lists`)
     await client.query(`DROP TABLE IF EXISTS cards`)
     await client.query(`DROP TABLE IF EXISTS user_to_board`)
 
@@ -19,7 +20,7 @@ module.exports = {
       creation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )`)
 
-    await client.query(`CREATE TABLE board_lists(
+    await client.query(`CREATE TABLE lists(
       id SERIAL PRIMARY KEY,
       board_id INTEGER NOT NULL,
       title TEXT NOT NULL,
@@ -30,7 +31,7 @@ module.exports = {
       id SERIAL PRIMARY KEY,
       board_list_id INTEGER NOT NULL,
       title TEXT NOT NULL,
-      description TEXT NOT NULL,
+      description TEXT DEFAULT '',
       creation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )`)
 
