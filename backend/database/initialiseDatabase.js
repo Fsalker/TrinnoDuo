@@ -1,6 +1,7 @@
 module.exports = {
   initialiseDatabase: async(client) => {
     await client.query(`DROP TABLE IF EXISTS users`)
+    await client.query(`DROP TABLE IF EXISTS sessions`)
     await client.query(`DROP TABLE IF EXISTS boards`)
     await client.query(`DROP TABLE IF EXISTS board_lists`)
     await client.query(`DROP TABLE IF EXISTS lists`)
@@ -11,6 +12,13 @@ module.exports = {
       id SERIAL PRIMARY KEY,
       username TEXT NOT NULL,
       password TEXT NOT NULL,
+      creation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    )`)
+
+    await client.query(`CREATE TABLE sessions(
+      id SERIAL PRIMARY KEY,
+      user_id INTEGER NOT NULL,
+      session TEXT NOT NULL,
       creation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )`)
 

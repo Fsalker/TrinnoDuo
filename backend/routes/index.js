@@ -6,8 +6,6 @@ router.use(express.json())
 // Use routers from all exported .js files in this folder, except for index.js and common.js
 let apiFiles = fs.readdirSync(__dirname).filter(fileName => fileName != "index.js" && fileName != "common.js").map(fileName => fileName.slice(0, -3)).forEach(fileName => {
   try{
-    //let {log} = require("")
-
     router.use(require(`./${fileName}`))
   } catch(e) {
     console.log("An error has occurred when adding Route "+fileName)
