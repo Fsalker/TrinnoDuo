@@ -23,7 +23,8 @@ module.exports = (args) => {
 
   router.get(args.apiName+"/:session", async(req, res) => {
     try{
-      if(!(await args.authentificateUserWithSession(req.client, req.params.session))) return res.status(401).end()
+      let {session} = req.params
+      if(!(await args.authentificateUserWithSession(req.client, session))) return res.status(401).end()
 
       let users = (await req.client.query("SELECT id as user_id, username FROM users")).rows
       res.end(JSON.stringify(users))

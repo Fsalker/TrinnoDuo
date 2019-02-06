@@ -9,7 +9,7 @@ module.exports = (args) => {
       let {username, password} = req.body.data
       password = hashify(password)
 
-      let r = await req.client.query("SELECT id FROM users WHERE username = $1", [username])
+      let r = await req.client.query("SELECT id FROM users WHERE username = $1 AND password = $2", [username, password])
       if(r.rows.length == 0)
         return res.status(404).end()
       let user_id = r.rows[0].id

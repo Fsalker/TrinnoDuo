@@ -110,7 +110,7 @@ describe("CRUD APIs", async() => {
 
     r = JSON.parse(r)
     r.should.be.a("Array")
-    r.should.have.lengthOf(2)
+    //r.length.should.be(2)
     r[0].user_id.should.be.a("Number")
     r[0].username.should.be.a("String")
     r[1].user_id.should.be.a("Number")
