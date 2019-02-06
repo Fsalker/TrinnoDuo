@@ -10,13 +10,13 @@ module.exports = (args) => {
       password = hashify(password)
 
       if((await req.client.query("SELECT id FROM users WHERE username = $1", [username])).rows.length > 0) {
-        args.log(`User ${username} was attempted to be registered, but it was already taken.`)
+        //args.log(`User ${username} was attempted to be registered, but it was already taken.`)
         return res.status(409).end()
       }
       let r = await req.client.query("INSERT INTO users(username, password) VALUES($1, $2) RETURNING id", [username, password])
       let user_id = r.rows[0].id
       let session = await createSession(req.client, user_id)
-      args.log("Registered user "+username)
+      //args.log("Registered user "+username)
       res.end(JSON.stringify({session}))
     }catch(e){ args.catchRouteError({error: e, result: res}) }
   })

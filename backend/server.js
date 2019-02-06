@@ -3,7 +3,7 @@ let log = require("./routes/common.js").log
 require("dotenv").config();
 let connect = require("./database/connect")
 
-const INITIALISE_DATABASE = true;
+const INITIALISE_DATABASE = false;
 const PORT = require.main === module ? process.env.BACKEND_PORT : process.env.BACKEND_ALTERNATIVE_PORT // Use the default port when running server.js directly OR the alternative port otherwise (so as to avoid conflicts :D)
 
 let main = async() => {

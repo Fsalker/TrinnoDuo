@@ -34,5 +34,14 @@ module.exports = {
     let user_id = r.rows[0].id
     return await module.exports.createSession(client, user_id)
   },
-  getIdFromSession: async(client, session) => (await client.query("SELECT user_id FROM sessions WHERE session = $1", [session])).rows[0].user_id
+  getIdFromSession: async(client, session) => (await client.query("SELECT user_id FROM sessions WHERE session = $1", [session])).rows[0].user_id,
+  validateBoardOwnership: async(client, user_id, board_id) => {
+    return (await client.query("SELECT id FROM boards WHERE id = $1 AND user_id = $2", [board_id, user_id])).rows.length > 0
+  },
+  validateBoardParticipation: async(client, user_id, board_id) => {
+    return (await client.query("SELECT id FROM user_to_board WHERE user_id = $1 AND board_id = $2", [user_id, board_id])).rows.length > 0
+  },
+  joinUserIntoBoard: async(client, user_id, board_id) => {
+    await client.query("INSERT INTO user_to_board(user_id, board_id) VALUES($1, $2)", [user_id, board_id])
+  }
 }

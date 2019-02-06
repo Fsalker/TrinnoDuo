@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "backend-test": "set SUPPRESS_LOGS=yes && mocha backend/test.js --exit",
-    "backend-nodemon": "nodemon backend/server.js --use-strict",
+    "backend-test": "mocha backend/test.js --exit",
+    "backend-nodemon": "nodemon backend/server.js",
     "backend": "node backend/server.js --use_strict",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

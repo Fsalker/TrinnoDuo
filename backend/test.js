@@ -163,106 +163,107 @@ describe("CRUD APIs", async() => {
     r.title.should.equal(BOARD_TITLE_NEW)
   })
 
-  // // ========[ Lists ]========
-  // //
-  // it("Should create List for Board 1 for User 1", async() => {
-  //   let api = "lists"
-  //   let method = "POST"
-  //   let uri = `${HOST}/${api}`
-  //   let auth = {session: SESSION_1}
-  //   let data = {board_id: BOARD_ID, title: LIST_TITLE}
-  //   let r = await request({uri, method, json: {auth, data}})
+  // ========[ Lists ]========
   //
-  //   r.list_id.should.be.a("Number")
-  //   LIST_ID = r.list_id
-  // })
+  it("Should create List for Board 1 for User 1", async() => {
+    let api = "lists"
+    let method = "POST"
+    let uri = `${HOST}/${api}`
+    let auth = {session: SESSION_1}
+    let data = {board_id: BOARD_ID, title: LIST_TITLE}
+    let r = await request({uri, method, json: {auth, data}})
+
+    r.list_id.should.be.a("Number")
+    LIST_ID = r.list_id
+  })
+
+  it("Should edit List", async() => {
+    let api = "lists"
+    let method = "PUT"
+    let uri = `${HOST}/${api}`
+    let auth = {session: SESSION_1}
+    let data = {list_id: LIST_ID, title: LIST_TITLE_NEW}
+    let r = await request({uri, method, json: {auth, data}})
+  })
+
+  it("Should get Lists for Board 1 for User 1", async() => {
+    let api = "lists"
+    let method = "GET"
+    let uri = `${HOST}/${api}/${SESSION_1}/${BOARD_ID}`
+    let r = await request({uri, method})
+
+    r = JSON.parse(r)
+    r.should.be.a("Array")
+    r.should.have.lengthOf(1)
+    r[0].list_id.should.be.a("Number")
+    r[0].title.should.equal(LIST_TITLE_NEW)
+  })
+
+  // ========[ Cards ]========
   //
-  // it("Should edit List", async() => {
-  //   let api = "lists"
-  //   let method = "PUT"
-  //   let uri = `${HOST}/${api}`
-  //   let auth = {session: SESSION_1}
-  //   let data = {list_id: LIST_ID, title: LIST_TITLE_NEW}
-  //   let r = await request({uri, method, json: {auth, data}})
-  // })
+  it("Should create Card for List 1 for User 1", async() => {
+    let api = "cards"
+    let method = "POST"
+    let uri = `${HOST}/${api}`
+    let auth = {session: SESSION_1}
+    let data = {list_id: LIST_ID, title: CARD_TITLE}
+    let r = await request({uri, method, json: {auth, data}})
+
+    r.card_id.should.be.a("Number")
+    CARD_ID = r.card_id
+  })
+
+  it("Should edit Card 1", async() => {
+    let api = "cards"
+    let method = "PUT"
+    let uri = `${HOST}/${api}`
+    let auth = {session: SESSION_1}
+    let data = {card_id: CARD_ID, title: CARD_TITLE_NEW}
+    let r = await request({uri, method, json: {auth, data}})
+  })
+
+  it("Should get Cards for User 1", async() => {
+    let api = "cards"
+    let method = "GET"
+    let uri = `${HOST}/${api}/${SESSION_1}/${LIST_ID}`
+    let r = await request({uri, method})
+
+    r = JSON.parse(r)
+    r.should.be.a("Array")
+    r.should.have.lengthOf(1)
+    r[0].card_id.should.be.a("Number")
+    r[0].title.should.equal(CARD_TITLE_NEW)
+  })
+
+  it("Should get Card 1 for User 1", async() => {
+    let api = "cards"
+    let method = "GET"
+    let uri = `${HOST}/${api}/${SESSION_1}/${LIST_ID}/${CARD_ID}`
+    let r = await request({uri, method})
+
+    r = JSON.parse(r)
+    r.description.should.equal("")
+  })
+
+  // ========[ Delete Everything ]========
   //
-  // it("Should get Lists for Board 1 for User 1", async() => {
-  //   let api = "lists"
-  //   let method = "GET"
-  //   let uri = `${HOST}/${api}/${SESSION_1}/${BOARD_ID}`
-  //   let r = await request({uri, method})
-  //
-  //   r = JSON.parse(r)
-  //   r.should.be.a("Array")
-  //   r.should.have.lengthOf(1)
-  //   r[0].list_id.should.be.a("Number")
-  //   r[0].title.should.equal(LIST_TITLE_NEW)
-  // })
-  //
-  // // ========[ Cards ]========
-  // //
-  // it("Should create Card for List 1 for User 1", async() => {
-  //   let api = "cards"
-  //   let method = "POST"
-  //   let uri = `${HOST}/${api}`
-  //   let auth = {session: SESSION_1}
-  //   let data = {list_id: LIST_ID, title: CARD_TITLE}
-  //   let r = await request({uri, method, json: {auth, data}})
-  //
-  //   r.card_id.should.be.a("Number")
-  //   CARD_ID = r.card_id
-  // })
-  //
-  // it("Should edit Card 1", async() => {
-  //   let api = "cards"
-  //   let method = "PUT"
-  //   let uri = `${HOST}/${api}`
-  //   let auth = {session: SESSION_1}
-  //   let data = {card_id: CARD_ID, title: CARD_TITLE_NEW}
-  //   let r = await request({uri, method, json: {auth, data}})
-  // })
-  //
-  // it("Should get Cards for User 1", async() => {
-  //   let api = "cards"
-  //   let method = "GET"
-  //   let uri = `${HOST}/${api}/${SESSION_1}/${LIST_ID}`
-  //   let r = await request({uri, method})
-  //
-  //   r = JSON.parse(r)
-  //   r.should.be.a("Array")
-  //   r.should.have.lengthOf(1)
-  //   r[0].card_id.should.be.a("Number")
-  //   r[0].title.should.equal(CARD_TITLE_NEW)
-  // })
-  //
-  // it("Should get Card 1 for User 1", async() => {
-  //   let api = "cards"
-  //   let method = "GET"
-  //   let uri = `${HOST}/${api}/${SESSION_1}/${LIST_ID}/${CARD_ID}`
-  //   let r = await request({uri, method})
-  //
-  //   r.description.should.equal("")
-  // })
-  //
-  // // ========[ Delete Everything ]========
-  // //
-  // it("Should Delete Card 1", async() => {
-  //   let api = "cards"
-  //   let method = "DELETE"
-  //   let uri = `${HOST}/${api}`
-  //   let auth = {session: SESSION_1}
-  //   let data = {card_id: CARD_ID}
-  //   let r = await request({uri, method, json: {auth, data}})
-  // })
-  //
-  // it("Should Delete List 1", async() => {
-  //   let api = "lists"
-  //   let method = "DELETE"
-  //   let uri = `${HOST}/${api}`
-  //   let auth = {session: SESSION_1}
-  //   let data = {list_id: LIST_ID}
-  //   let r = await request({uri, method, json: {auth, data}})
-  // })
+  it("Should Delete Card 1", async() => {
+    let api = "cards"
+    let method = "DELETE"
+    let uri = `${HOST}/${api}`
+    let auth = {session: SESSION_1}
+    let data = {card_id: CARD_ID}
+    let r = await request({uri, method, json: {auth, data}})
+  })
+
+  it("Should Delete List 1", async() => {
+    let api = "lists"
+    let method = "DELETE"
+    let uri = `${HOST}/${api}`
+    let auth = {session: SESSION_1}
+    let data = {list_id: LIST_ID}
+    let r = await request({uri, method, json: {auth, data}})
+  })
 
   it("Should Delete Board 1", async() => {
     let api = "boards"

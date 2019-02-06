@@ -14,7 +14,7 @@ module.exports = (args) => {
         return res.status(404).end()
       let user_id = r.rows[0].id
       let session = await createSession(req.client, user_id)
-      args.log("Logged in user "+username)
+      //args.log("Logged in user "+username)
       res.end(JSON.stringify({session}))
     }catch(e){ args.catchRouteError({error: e, result: res}) }
   })

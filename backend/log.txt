@@ -996,3 +996,355 @@
 [2019/01/06 - 16:01:56] Server listening on 1337
 [2019/01/06 - 16:01:58] Server listening on 1337
 [2019/01/06 - 16:02:07] Registered user gigel4
+[2019/01/06 - 16:08:00] Server listening on 1337
+[2019/01/06 - 16:08:52] Server listening on 1337
+[2019/01/06 - 16:09:00] Server listening on 1337
+[2019/01/06 - 16:09:38] Server listening on 1337
+[2019/01/06 - 16:11:27] Server listening on 1337
+[2019/01/06 - 16:11:28] Server listening on 1337
+[2019/01/06 - 16:12:34] An error has occurred when adding Route boards
+[2019/01/06 - 16:12:34] TypeError: Cannot read property 'apiName' of undefined
+[2019/01/06 - 16:12:34] An error has occurred when adding Route lists
+[2019/01/06 - 16:12:34] TypeError: Cannot read property 'apiName' of undefined
+[2019/01/06 - 16:12:34] An error has occurred when adding Route login
+[2019/01/06 - 16:12:34] TypeError: Cannot read property 'apiName' of undefined
+[2019/01/06 - 16:12:34] An error has occurred when adding Route users
+[2019/01/06 - 16:12:34] TypeError: Cannot read property 'apiName' of undefined
+[2019/01/06 - 16:12:34] Server listening on 1337
+[2019/01/06 - 16:13:05] An error has occurred when adding Route boards
+[2019/01/06 - 16:13:05] TypeError: Cannot read property 'apiName' of undefined
+[2019/01/06 - 16:13:05] An error has occurred when adding Route lists
+[2019/01/06 - 16:13:05] TypeError: Cannot read property 'apiName' of undefined
+[2019/01/06 - 16:13:05] An error has occurred when adding Route users
+[2019/01/06 - 16:13:05] TypeError: Cannot read property 'apiName' of undefined
+[2019/01/06 - 16:13:05] Server listening on 1337
+[2019/01/06 - 16:13:05] An error has occurred when adding Route login
+[2019/01/06 - 16:13:05] TypeError: Cannot read property 'apiName' of undefined
+[2019/01/06 - 16:13:23] An error has occurred when adding Route boards
+[2019/01/06 - 16:13:23] TypeError: Cannot read property 'apiName' of undefined
+[2019/01/06 - 16:13:23] An error has occurred when adding Route lists
+[2019/01/06 - 16:13:23] TypeError: Cannot read property 'apiName' of undefined
+[2019/01/06 - 16:13:23] An error has occurred when adding Route login
+[2019/01/06 - 16:13:23] TypeError: Cannot read property 'apiName' of undefined
+[2019/01/06 - 16:13:23] An error has occurred when adding Route users
+[2019/01/06 - 16:13:23] TypeError: Cannot read property 'apiName' of undefined
+[2019/01/06 - 16:13:23] Server listening on 1337
+[2019/01/06 - 16:13:47] An error has occurred when adding Route boards
+[2019/01/06 - 16:13:47] TypeError: Cannot read property 'apiName' of undefined
+[2019/01/06 - 16:13:47] An error has occurred when adding Route lists
+[2019/01/06 - 16:13:47] TypeError: Cannot read property 'apiName' of undefined
+[2019/01/06 - 16:13:47] An error has occurred when adding Route login
+[2019/01/06 - 16:13:47] TypeError: Cannot read property 'apiName' of undefined
+[2019/01/06 - 16:13:47] An error has occurred when adding Route users
+[2019/01/06 - 16:13:47] TypeError: Cannot read property 'apiName' of undefined
+[2019/01/06 - 16:13:47] Server listening on 1337
+[2019/01/06 - 16:13:49] Server listening on 1337
+[2019/01/06 - 16:14:11] Server listening on 1337
+[2019/01/06 - 16:16:10] Registered user gigel4
+[2019/01/06 - 16:17:22] User gigel4 was attempted to be registered, but it was already taken.
+[2019/01/06 - 16:17:49] Logged in user gigel4
+[2019/01/06 - 16:18:01] ReferenceError: joinUserIntoBoard is not defined
+[2019/01/06 - 16:18:19] Server listening on 1337
+[2019/01/06 - 16:18:37] Server listening on 1337
+[2019/01/06 - 16:20:35] Server listening on 1337
+[2019/01/06 - 16:20:46] Server listening on 1337
+[2019/01/06 - 16:21:17] Server listening on 1337
+[2019/01/06 - 16:22:48] Server listening on 1337
+[2019/01/06 - 16:23:03] An error has occurred when adding Route lists
+[2019/01/06 - 16:23:03] SyntaxError: Unexpected token )
+[2019/01/06 - 16:23:03] Server listening on 1337
+[2019/01/06 - 16:24:14] Server listening on 1337
+[2019/01/06 - 16:24:49] Server listening on 1337
+[2019/01/06 - 16:24:56] Server listening on 1337
+[2019/01/06 - 16:25:18] Server listening on 1337
+[2019/01/06 - 16:25:21] Server listening on 1337
+[2019/01/06 - 16:25:24] Server listening on 7331
+[2019/01/06 - 16:25:24] Registered user MARIOZ0R
+[2019/01/06 - 16:25:24] Registered user LUIGIZ0R
+[2019/01/06 - 16:25:24] Logged in user MARIOZ0R
+[2019/01/06 - 16:25:24] Logged in user LUIGIZ0R
+[2019/01/06 - 16:25:24] ReferenceError: validateBoardOwnership is not defined
+[2019/01/06 - 16:25:34] Server listening on 1337
+[2019/01/06 - 16:25:37] Server listening on 7331
+[2019/01/06 - 16:25:37] Registered user MARIOZ0R
+[2019/01/06 - 16:25:37] Registered user LUIGIZ0R
+[2019/01/06 - 16:25:37] Logged in user MARIOZ0R
+[2019/01/06 - 16:25:37] Logged in user LUIGIZ0R
+[2019/01/06 - 16:25:37] TypeError: Cannot read property 'list_id' of undefined
+[2019/01/06 - 16:25:49] Server listening on 1337
+[2019/01/06 - 16:25:52] Server listening on 7331
+[2019/01/06 - 16:25:53] Registered user MARIOZ0R
+[2019/01/06 - 16:25:53] Registered user LUIGIZ0R
+[2019/01/06 - 16:25:53] Logged in user MARIOZ0R
+[2019/01/06 - 16:25:53] Logged in user LUIGIZ0R
+[2019/01/06 - 16:26:09] Server listening on 1337
+[2019/01/06 - 16:26:23] Server listening on 1337
+[2019/01/06 - 16:26:32] Server listening on 1337
+[2019/01/06 - 16:26:38] Server listening on 1337
+[2019/01/06 - 16:26:45] Server listening on 1337
+[2019/01/06 - 16:26:55] An error has occurred when adding Route lists
+[2019/01/06 - 16:26:55] SyntaxError: Unexpected token .
+[2019/01/06 - 16:26:55] Server listening on 1337
+[2019/01/06 - 16:27:03] An error has occurred when adding Route lists
+[2019/01/06 - 16:27:03] SyntaxError: Unexpected token )
+[2019/01/06 - 16:27:03] Server listening on 1337
+[2019/01/06 - 16:31:14] Server listening on 1337
+[2019/01/06 - 16:31:28] Server listening on 1337
+[2019/01/06 - 16:31:32] Server listening on 1337
+[2019/01/06 - 16:31:50] Server listening on 1337
+[2019/01/06 - 16:31:55] Server listening on 7331
+[2019/01/06 - 16:31:55] Registered user MARIOZ0R
+[2019/01/06 - 16:31:55] Registered user LUIGIZ0R
+[2019/01/06 - 16:31:55] Logged in user MARIOZ0R
+[2019/01/06 - 16:31:55] Logged in user LUIGIZ0R
+[2019/01/06 - 16:32:02] Server listening on 1337
+[2019/01/06 - 16:32:04] Server listening on 7331
+[2019/01/06 - 16:32:04] Registered user MARIOZ0R
+[2019/01/06 - 16:32:04] Registered user LUIGIZ0R
+[2019/01/06 - 16:32:04] Logged in user MARIOZ0R
+[2019/01/06 - 16:32:04] Logged in user LUIGIZ0R
+[2019/01/06 - 16:32:17] Server listening on 1337
+[2019/01/06 - 16:32:19] Server listening on 7331
+[2019/01/06 - 16:32:19] Registered user MARIOZ0R
+[2019/01/06 - 16:32:19] Registered user LUIGIZ0R
+[2019/01/06 - 16:32:19] Logged in user MARIOZ0R
+[2019/01/06 - 16:32:20] Logged in user LUIGIZ0R
+[2019/01/06 - 16:32:20] TypeError: Cannot read property 'user_id' of undefined
+[2019/01/06 - 16:33:17] Server listening on 1337
+[2019/01/06 - 16:33:20] Server listening on 7331
+[2019/01/06 - 16:33:20] Registered user MARIOZ0R
+[2019/01/06 - 16:33:20] Registered user LUIGIZ0R
+[2019/01/06 - 16:33:20] Logged in user MARIOZ0R
+[2019/01/06 - 16:33:20] Logged in user LUIGIZ0R
+[2019/01/06 - 16:33:20] TypeError: Cannot read property 'user_id' of undefined
+[2019/01/06 - 16:33:22] Server listening on 1337
+[2019/01/06 - 16:33:25] Server listening on 7331
+[2019/01/06 - 16:33:25] Registered user MARIOZ0R
+[2019/01/06 - 16:33:25] Registered user LUIGIZ0R
+[2019/01/06 - 16:33:25] Logged in user MARIOZ0R
+[2019/01/06 - 16:33:25] Logged in user LUIGIZ0R
+[2019/01/06 - 16:33:25] ReferenceError: list_id is not defined
+[2019/01/06 - 16:33:48] Server listening on 1337
+[2019/01/06 - 16:33:51] Server listening on 1337
+[2019/01/06 - 16:33:53] Server listening on 7331
+[2019/01/06 - 16:33:53] Registered user MARIOZ0R
+[2019/01/06 - 16:33:53] Registered user LUIGIZ0R
+[2019/01/06 - 16:33:53] Logged in user MARIOZ0R
+[2019/01/06 - 16:33:53] Logged in user LUIGIZ0R
+[2019/01/06 - 16:34:08] Server listening on 1337
+[2019/01/06 - 16:34:14] Server listening on 1337
+[2019/01/06 - 16:34:35] An error has occurred when adding Route lists
+[2019/01/06 - 16:34:35] SyntaxError: Identifier 'list_id' has already been declared
+[2019/01/06 - 16:34:35] Server listening on 1337
+[2019/01/06 - 16:37:58] An error has occurred when adding Route lists
+[2019/01/06 - 16:37:58] SyntaxError: Identifier 'list_id' has already been declared
+[2019/01/06 - 16:37:58] Server listening on 1337
+[2019/01/06 - 16:38:06] An error has occurred when adding Route lists
+[2019/01/06 - 16:38:06] SyntaxError: Identifier 'list_id' has already been declared
+[2019/01/06 - 16:38:06] Server listening on 1337
+[2019/01/06 - 16:38:36] Server listening on 1337
+[2019/01/06 - 16:40:01] Server listening on 1337
+[2019/01/06 - 16:40:04] Server listening on 7331
+[2019/01/06 - 16:40:04] Registered user MARIOZ0R
+[2019/01/06 - 16:40:04] Registered user LUIGIZ0R
+[2019/01/06 - 16:40:04] Logged in user MARIOZ0R
+[2019/01/06 - 16:40:04] Logged in user LUIGIZ0R
+[2019/01/06 - 16:40:25] Server listening on 1337
+[2019/01/06 - 16:40:27] Server listening on 7331
+[2019/01/06 - 16:40:27] Registered user MARIOZ0R
+[2019/01/06 - 16:40:27] Registered user LUIGIZ0R
+[2019/01/06 - 16:40:27] Logged in user MARIOZ0R
+[2019/01/06 - 16:40:27] Logged in user LUIGIZ0R
+[2019/01/06 - 16:40:27] ReferenceError: log is not defined
+[2019/01/06 - 16:41:20] Server listening on 1337
+[2019/01/06 - 16:41:21] Server listening on 7331
+[2019/01/06 - 16:41:21] Registered user MARIOZ0R
+[2019/01/06 - 16:41:21] Registered user LUIGIZ0R
+[2019/01/06 - 16:41:21] Logged in user MARIOZ0R
+[2019/01/06 - 16:41:21] Logged in user LUIGIZ0R
+[2019/01/06 - 16:41:22] ________________
+[2019/01/06 - 16:41:22] undefined
+[2019/01/06 - 16:41:22] 1
+[2019/01/06 - 16:41:33] Server listening on 1337
+[2019/01/06 - 16:41:35] Server listening on 7331
+[2019/01/06 - 16:41:35] Registered user MARIOZ0R
+[2019/01/06 - 16:41:35] Registered user LUIGIZ0R
+[2019/01/06 - 16:41:35] Logged in user MARIOZ0R
+[2019/01/06 - 16:41:35] Logged in user LUIGIZ0R
+[2019/01/06 - 16:41:35] ________________
+[2019/01/06 - 16:41:35] 1
+[2019/01/06 - 16:41:35] 1
+[2019/01/06 - 16:41:43] Server listening on 1337
+[2019/01/06 - 16:41:46] Server listening on 7331
+[2019/01/06 - 16:41:46] Registered user MARIOZ0R
+[2019/01/06 - 16:41:46] Registered user LUIGIZ0R
+[2019/01/06 - 16:41:46] Logged in user MARIOZ0R
+[2019/01/06 - 16:41:46] Logged in user LUIGIZ0R
+[2019/01/06 - 16:42:22] Server listening on 1337
+[2019/01/06 - 16:42:24] Server listening on 7331
+[2019/01/06 - 16:42:24] Registered user MARIOZ0R
+[2019/01/06 - 16:42:24] Registered user LUIGIZ0R
+[2019/01/06 - 16:42:24] Logged in user MARIOZ0R
+[2019/01/06 - 16:42:24] Logged in user LUIGIZ0R
+[2019/01/06 - 16:42:24] ReferenceError: log is not defined
+[2019/01/06 - 16:42:28] Server listening on 1337
+[2019/01/06 - 16:42:30] Server listening on 7331
+[2019/01/06 - 16:42:30] Registered user MARIOZ0R
+[2019/01/06 - 16:42:30] Registered user LUIGIZ0R
+[2019/01/06 - 16:42:30] Logged in user MARIOZ0R
+[2019/01/06 - 16:42:30] Logged in user LUIGIZ0R
+[2019/01/06 - 16:42:30] [object Object]
+[2019/01/06 - 16:42:44] Server listening on 1337
+[2019/01/06 - 16:42:46] Server listening on 7331
+[2019/01/06 - 16:42:46] Registered user MARIOZ0R
+[2019/01/06 - 16:42:46] Registered user LUIGIZ0R
+[2019/01/06 - 16:42:46] Logged in user MARIOZ0R
+[2019/01/06 - 16:42:46] Logged in user LUIGIZ0R
+[2019/01/06 - 16:42:46] Boarderino Listerino
+[2019/01/06 - 16:42:46] [object Object]
+[2019/01/06 - 16:42:52] Server listening on 1337
+[2019/01/06 - 16:43:02] Server listening on 1337
+[2019/01/06 - 16:43:04] Server listening on 7331
+[2019/01/06 - 16:43:04] Registered user MARIOZ0R
+[2019/01/06 - 16:43:04] Registered user LUIGIZ0R
+[2019/01/06 - 16:43:04] Logged in user MARIOZ0R
+[2019/01/06 - 16:43:04] Logged in user LUIGIZ0R
+[2019/01/06 - 16:43:04] [object Object]
+[2019/01/06 - 16:43:09] Server listening on 1337
+[2019/01/06 - 16:43:11] Server listening on 7331
+[2019/01/06 - 16:43:11] Registered user MARIOZ0R
+[2019/01/06 - 16:43:11] Registered user LUIGIZ0R
+[2019/01/06 - 16:43:11] Logged in user MARIOZ0R
+[2019/01/06 - 16:43:11] Logged in user LUIGIZ0R
+[2019/01/06 - 16:43:21] Server listening on 1337
+[2019/01/06 - 16:43:54] Server listening on 1337
+[2019/01/06 - 16:44:40] Server listening on 1337
+[2019/01/06 - 16:44:47] Server listening on 1337
+[2019/01/06 - 16:44:50] Server listening on 7331
+[2019/01/06 - 16:44:50] Registered user MARIOZ0R
+[2019/01/06 - 16:44:50] Registered user LUIGIZ0R
+[2019/01/06 - 16:44:50] Logged in user MARIOZ0R
+[2019/01/06 - 16:44:50] Logged in user LUIGIZ0R
+[2019/01/06 - 16:44:55] Server listening on 1337
+[2019/01/06 - 16:44:57] Server listening on 7331
+[2019/01/06 - 16:44:57] Registered user MARIOZ0R
+[2019/01/06 - 16:44:57] Registered user LUIGIZ0R
+[2019/01/06 - 16:44:57] Logged in user MARIOZ0R
+[2019/01/06 - 16:44:57] Logged in user LUIGIZ0R
+[2019/01/06 - 16:45:07] Server listening on 1337
+[2019/01/06 - 16:45:43] Server listening on 7331
+[2019/01/06 - 16:45:43] Registered user MARIOZ0R
+[2019/01/06 - 16:45:43] Registered user LUIGIZ0R
+[2019/01/06 - 16:45:43] Logged in user MARIOZ0R
+[2019/01/06 - 16:45:43] Logged in user LUIGIZ0R
+[2019/01/06 - 16:45:58] Server listening on 1337
+[2019/01/06 - 16:46:05] Server listening on 1337
+[2019/01/06 - 16:46:08] Server listening on 7331
+[2019/01/06 - 16:46:15] Server listening on 7331
+[2019/01/06 - 16:46:20] Server listening on 7331
+[2019/01/06 - 16:46:32] Server listening on 1337
+[2019/01/06 - 16:49:50] An error has occurred when adding Route boardInvitations
+[2019/01/06 - 16:49:50] TypeError: Router.use() requires a middleware function
+[2019/01/06 - 16:49:50] Server listening on 7331
+[2019/01/06 - 16:50:22] Server listening on 1337
+[2019/01/06 - 16:50:26] Server listening on 1337
+[2019/01/06 - 16:50:47] Server listening on 1337
+[2019/01/06 - 16:50:54] Server listening on 7331
+[2019/01/06 - 16:51:21] Server listening on 1337
+[2019/01/06 - 16:51:25] An error has occurred when adding Route cards
+[2019/01/06 - 16:51:25] SyntaxError: Identifier 'list_id' has already been declared
+[2019/01/06 - 16:51:25] Server listening on 1337
+[2019/01/06 - 16:55:55] An error has occurred when adding Route cards
+[2019/01/06 - 16:55:55] SyntaxError: Identifier 'list_id' has already been declared
+[2019/01/06 - 16:55:55] Server listening on 1337
+[2019/01/06 - 16:56:55] An error has occurred when adding Route cards
+[2019/01/06 - 16:56:55] SyntaxError: Unexpected token )
+[2019/01/06 - 16:56:55] Server listening on 1337
+[2019/01/06 - 16:57:13] Server listening on 1337
+[2019/01/06 - 16:57:19] Server listening on 1337
+[2019/01/06 - 16:57:23] Server listening on 1337
+[2019/01/06 - 16:57:39] Server listening on 1337
+[2019/01/06 - 16:57:42] Server listening on 7331
+[2019/01/06 - 16:57:42] ReferenceError: title is not defined
+[2019/01/06 - 16:57:54] Server listening on 1337
+[2019/01/06 - 16:57:55] Server listening on 7331
+[2019/01/06 - 16:58:02] Server listening on 1337
+[2019/01/06 - 16:58:04] Server listening on 7331
+[2019/01/06 - 16:58:16] Server listening on 1337
+[2019/01/06 - 16:58:55] Server listening on 1337
+[2019/01/06 - 16:59:11] Server listening on 7331
+[2019/01/06 - 16:59:17] Server listening on 1337
+[2019/01/06 - 16:59:31] Server listening on 1337
+[2019/01/06 - 16:59:46] Server listening on 1337
+[2019/01/06 - 16:59:50] Server listening on 7331
+[2019/01/06 - 17:01:25] Server listening on 1337
+[2019/01/06 - 17:01:35] Server listening on 1337
+[2019/01/06 - 17:01:39] Server listening on 1337
+[2019/01/06 - 17:01:54] Server listening on 1337
+[2019/01/06 - 17:01:56] Server listening on 1337
+[2019/01/06 - 17:01:59] Server listening on 7331
+[2019/01/06 - 17:01:59] error: column "card_id" does not exist
+[2019/01/06 - 17:02:16] Server listening on 1337
+[2019/01/06 - 17:02:18] Server listening on 7331
+[2019/01/06 - 17:02:24] Server listening on 1337
+[2019/01/06 - 17:02:28] Server listening on 1337
+[2019/01/06 - 17:02:34] Server listening on 1337
+[2019/01/06 - 17:02:36] Server listening on 1337
+[2019/01/06 - 17:02:40] Server listening on 1337
+[2019/01/06 - 17:02:45] SyntaxError: Identifier 'list_id' has already been declared
+[2019/01/06 - 17:02:45] An error has occurred when adding Route cards
+[2019/01/06 - 17:02:45] Server listening on 1337
+[2019/01/06 - 17:05:15] An error has occurred when adding Route cards
+[2019/01/06 - 17:05:15] Server listening on 1337
+[2019/01/06 - 17:05:15] SyntaxError: Identifier 'list_id' has already been declared
+[2019/01/06 - 17:05:25] An error has occurred when adding Route cards
+[2019/01/06 - 17:05:25] SyntaxError: Identifier 'list_id' has already been declared
+[2019/01/06 - 17:05:25] Server listening on 1337
+[2019/01/06 - 17:05:38] An error has occurred when adding Route cards
+[2019/01/06 - 17:05:38] SyntaxError: Identifier 'list_id' has already been declared
+[2019/01/06 - 17:05:38] Server listening on 1337
+[2019/01/06 - 17:05:42] An error has occurred when adding Route cards
+[2019/01/06 - 17:05:42] SyntaxError: Identifier 'list_id' has already been declared
+[2019/01/06 - 17:05:42] Server listening on 1337
+[2019/01/06 - 17:07:14] An error has occurred when adding Route cards
+[2019/01/06 - 17:07:14] SyntaxError: Identifier 'list_id' has already been declared
+[2019/01/06 - 17:07:14] Server listening on 1337
+[2019/01/06 - 17:07:19] An error has occurred when adding Route cards
+[2019/01/06 - 17:07:19] SyntaxError: Identifier 'list_id' has already been declared
+[2019/01/06 - 17:07:19] Server listening on 1337
+[2019/01/06 - 17:07:22] An error has occurred when adding Route cards
+[2019/01/06 - 17:07:22] SyntaxError: Identifier 'list_id' has already been declared
+[2019/01/06 - 17:07:22] Server listening on 7331
+[2019/01/06 - 17:07:43] Server listening on 1337
+[2019/01/06 - 17:07:46] Server listening on 7331
+[2019/01/06 - 17:07:46] TypeError: Cannot read property 'session' of undefined
+[2019/01/06 - 17:08:00] Server listening on 1337
+[2019/01/06 - 17:08:04] Server listening on 7331
+[2019/01/06 - 17:08:04] ReferenceError: client is not defined
+[2019/01/06 - 17:08:11] Server listening on 1337
+[2019/01/06 - 17:08:13] Server listening on 7331
+[2019/01/06 - 17:08:20] Server listening on 1337
+[2019/01/06 - 17:08:45] Server listening on 1337
+[2019/01/06 - 17:09:05] An error has occurred when adding Route cards
+[2019/01/06 - 17:09:05] SyntaxError: Identifier 'list_id' has already been declared
+[2019/01/06 - 17:09:05] Server listening on 1337
+[2019/01/06 - 17:09:14] An error has occurred when adding Route cards
+[2019/01/06 - 17:09:14] SyntaxError: Identifier 'list_id' has already been declared
+[2019/01/06 - 17:09:14] Server listening on 1337
+[2019/01/06 - 17:09:18] Server listening on 1337
+[2019/01/06 - 17:09:20] Server listening on 7331
+[2019/01/06 - 17:09:33] Server listening on 1337
+[2019/01/06 - 17:09:57] Server listening on 7331
+[2019/01/06 - 17:09:57] ReferenceError: cards is not defined
+[2019/01/06 - 17:10:03] Server listening on 1337
+[2019/01/06 - 17:10:04] Server listening on 7331
+[2019/01/06 - 17:10:15] Server listening on 1337
+[2019/01/06 - 17:10:17] Server listening on 7331
+[2019/01/06 - 17:10:20] Server listening on 1337
+[2019/01/06 - 17:10:22] Server listening on 7331
+[2019/01/06 - 17:10:22] [object Object]
+[2019/01/06 - 17:10:38] Server listening on 1337
+[2019/01/06 - 17:10:41] Server listening on 7331
+[2019/01/06 - 17:10:41] [object Object]
+[2019/01/06 - 17:10:46] Server listening on 1337
+[2019/01/06 - 17:10:48] Server listening on 7331

@@ -41,7 +41,7 @@ module.exports = {
 
     await client.query(`CREATE TABLE cards(
       id SERIAL PRIMARY KEY,
-      board_list_id INTEGER NOT NULL,
+      list_id INTEGER NOT NULL,
       title TEXT NOT NULL,
       description TEXT DEFAULT '',
       creation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
