@@ -1,15 +1,30 @@
 let express = require("express")
 let router = express.Router()
 let fs = require("fs")
+let {log} = require("./common.js")
+let {authentificateUserWithSession, getIdFromSession} = require("./common.js")
 
 router.use(express.json())
 // Use routers from all exported .js files in this folder, except for index.js and common.js
 let apiFiles = fs.readdirSync(__dirname).filter(fileName => fileName != "index.js" && fileName != "common.js").map(fileName => fileName.slice(0, -3)).forEach(fileName => {
   try{
-    router.use(require(`./${fileName}`))
+    if(!"boards users login".split(" ").includes(fileName))
+      return
+
+    let apiName = "/" + fileName
+    let catchRouteError = ({error, result}) => {
+      log(error)
+      result.status(500)
+      result.end()
+    }
+
+    let importedRouter = require("./" + fileName)({log, apiName, catchRouteError, authentificateUserWithSession, getIdFromSession})
+
+    router.use(importedRouter)
   } catch(e) {
-    console.log("An error has occurred when adding Route "+fileName)
-    console.log(e)
+    let log = require("./common.js").log
+    log("An error has occurred when adding Route "+fileName)
+    log(e)
   }
 })
 

@@ -1,4 +1,5 @@
 let express = require("express")
+let log = require("./routes/common.js").log
 require("dotenv").config();
 let connect = require("./database/connect")
 
@@ -14,11 +15,9 @@ let main = async() => {
   let app = express()
   app.listen(PORT)
   app.use((req, res, next) => {req.client = client; next()}) // Pass client to Routes
-  // app.use((req, res, next) => {console.log("Started!"); next()})
-  // app.use((req, res, next) => {console.log("Finished!"); next()})
   let routes = require("./routes")
   app.use(routes)
-  console.log(`Server listening on ${PORT}`)
+  log(`Server listening on ${PORT}`)
 }
 
 if(require.main === module)

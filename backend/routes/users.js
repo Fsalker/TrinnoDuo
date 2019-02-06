@@ -1,66 +1,64 @@
-let router = require("express").Router()
-let {log} = require("./common.js")
-let apiName = require("./common.js").thisApiName(__filename)
 let {createSession} = require("./common.js")
+let {hashify} = require("./common.js")
 
-router.post(apiName, async(req, res) => {
-  try{
-    //console.log(req.client)
-    //console.log(req.body)
-    /*if(req.body.username === undefined || typeof(req.body.username) != "String" || req.body.username.length > 1000000)
-      return res.status(400)*/
-    let r = await req.client.query("INSERT INTO users(username, password) VALUES($1, $2) RETURNING id", [req.body.username, req.body.password])
-    let user_id = r.rows[0].id
-    let session = await createSession(req.client, user_id)
-
-    res.end(JSON.stringify({session}))
-  }catch(e){log(e)}
-})
-
-module.exports = router
-
-/*module.exports = (...args) => {
+module.exports = (args) => {
   let router = require("express").Router()
 
-  /*router.get(args.apiName, async(req, res) => {
-    throw 123
+  router.post(args.apiName, async(req, res) => {
+    try{
+      let {username, password} = req.body.data
+      password = hashify(password)
+
+      if((await req.client.query("SELECT id FROM users WHERE username = $1", [username])).rows.length > 0) {
+        args.log(`User ${username} was attempted to be registered, but it was already taken.`)
+        return res.status(409).end()
+      }
+      let r = await req.client.query("INSERT INTO users(username, password) VALUES($1, $2) RETURNING id", [username, password])
+      let user_id = r.rows[0].id
+      let session = await createSession(req.client, user_id)
+      args.log("Registered user "+username)
+      res.end(JSON.stringify({session}))
+    }catch(e){ args.catchRouteError({error: e, result: res}) }
   })
-}*/
 
-/*let router = require("express").Router()
-let {log} = require("./common.js")
-let apiName = require("./common.js").thisApiName(__filename)
+  router.get(args.apiName+"/:session", async(req, res) => {
+    try{
+      if(!(await args.authentificateUserWithSession(req.client, req.params.session))) return res.status(401).end()
 
-/*router.get(apiName, (req, res) => {
-  try {
-    //throw new Error("123f")
-  } catch(e) {
-    log(e)
-  }
-})
+      let users = (await req.client.query("SELECT id as user_id, username FROM users")).rows
+      res.end(JSON.stringify(users))
+    }catch(e){ args.catchRouteError({error: e, result: res}) }
+  })
 
-router.get(`${apiName}/:id`, (req, res) => {
-  try{
-    res.end(`Getting ${apiName} with ID ${req.params.id}`)
-  } catch(e) {
-    log(e)
-  }
-})
+  router.delete(args.apiName, async(req, res) => {
+    try{
+      let session, username, password
 
-router.post(apiName, (req, res) => {
-  try{
-    res.end(JSON.stringify({session: `1234123456785678123412345678567812341234567856781234123456785678`}))
-  } catch(e) {
-    log(e)
-  }
-})
+      let user_id
+      if(req.body.auth && req.body.auth.session) {
+        //if(!req.body.auth.session) return res.status(400).end()
+        session = req.body.auth.session
+        let r = (await req.client.query("SELECT id FROM sessions WHERE session = $1", [session]))
+        if(r.rows.length == 0) return res.status(204).end()
+        user_id = r.rows[0].id
+      }
+      else if(req.body.data && req.body.data.username && req.body.data.password) {
+        //if(!req.body.data.username || !req.body.data.password) return res.status(400).end()
+        username = req.body.data.username
+        password = req.body.data.password
+        password = hashify(password)
+        let r = (await req.client.query("SELECT id FROM users WHERE username = $1 AND password = $2", [username, password]))
+        if(r.rows.length == 0) return res.status(204).end()
+        user_id = r.rows[0].id
+      }
+      else return res.status(400).end()
 
-router.delete(apiName, (req, res) => {
-  try{
-    res.end(`Delete ${apiName}`)
-  } catch(e) {
-    log(e)
-  }
-})
+      await req.client.query("DELETE FROM users WHERE id = $1", [user_id])
+      await req.client.query("DELETE FROM sessions WHERE user_id = $1", [user_id])
 
-module.exports = router*/
+      res.end()
+    }catch(e){ args.catchRouteError({error: e, result: res}) }
+  })
+
+  return router
+}
