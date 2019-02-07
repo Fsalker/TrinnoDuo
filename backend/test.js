@@ -139,7 +139,7 @@ describe("CRUD APIs", async() => {
       let r = await request({uri, method, json: {auth, data}})
     })
 
-    it("Should get Boards for User 1", async() => {
+    it("Should get Boards for User 1 (1 board)", async() => {
       let api = "boards"
       let method = "GET"
       let uri = `${HOST}/${api}/${SESSION_1}`
@@ -147,9 +147,20 @@ describe("CRUD APIs", async() => {
 
       r = JSON.parse(r)
       r.should.be.a("Array")
-      //r.should.have.lengthOf(1)
+      r.should.have.lengthOf(1)
       r[0].board_id.should.be.a("Number")
       r[0].title.should.be.a("String")
+    })
+
+    it("Should get Boards for User 2 (no boards)", async() => {
+      let api = "boards"
+      let method = "GET"
+      let uri = `${HOST}/${api}/${SESSION_2}`
+      let r = await request({uri, method})
+
+      r = JSON.parse(r)
+      r.should.be.a("Array")
+      r.should.have.lengthOf(0)
     })
 
     it("Should get Board 1 for User 1", async() => {

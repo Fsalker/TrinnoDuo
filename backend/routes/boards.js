@@ -35,7 +35,7 @@ module.exports = (args) => {
       if(!(await args.authentificateUserWithSession(req.client, req.params.session))) return res.status(401).end()
 
       let user_id = await args.getIdFromSession(req.client, req.params.session)
-      let boards = (await req.client.query("SELECT a.id AS board_id, a.title, a.creation_date, a.last_updated FROM boards a JOIN user_to_board b ON a.id = b.board_id")).rows
+      let boards = (await req.client.query("SELECT a.id AS board_id, a.title, a.creation_date, a.last_updated FROM boards a JOIN user_to_board b ON a.id = b.board_id WHERE b.user_id = $1", [user_id])).rows
 
       res.end(JSON.stringify(boards))
     }catch(e){ args.catchRouteError({error: e, result: res}) }
