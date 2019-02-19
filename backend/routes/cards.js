@@ -56,7 +56,7 @@ module.exports = (args) => {
       let user_id = await args.getIdFromSession(req.client, session)
       if(!(await args.validateBoardOwnership(req.client, user_id, board_id))) return res.status(403).end()
 
-      let card = (await req.client.query("SELECT description FROM cards WHERE list_id = $1", [list_id])).rows[0]
+      let card = (await req.client.query("SELECT title, description FROM cards WHERE id = $1", [card_id])).rows[0]
 
       res.end(JSON.stringify(card))
     }catch(e){ args.catchRouteError({error: e, result: res}) }

@@ -50,6 +50,7 @@ module.exports = (args) => {
       if(!(await args.validateBoardOwnership(req.client, user_id, board_id))) return res.status(403).end()
 
       await req.client.query("DELETE FROM lists WHERE id = $1", [list_id])
+      await req.client.query("DELETE FROM cards WHERE list_id = $1", [list_id])
 
       res.end()
     }catch(e){ args.catchRouteError({error: e, result: res}) }
