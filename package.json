@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "backend-test": "mocha backend/test.js --exit",
+    "backend-test": "mocha backend/test.js -b --exit",
     "backend-nodemon": "nodemon backend/server.js",
     "backend": "node backend/server.js --use_strict",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,6 +20,8 @@
     "mocha": "^5.2.0",
     "pg": "^7.8.0",
     "request": "^2.88.0",
-    "request-promise-native": "^1.0.5"
+    "request-promise-native": "^1.0.5",
+    "sequelize": "^5.2.0",
+    "sequelize-cli": "^5.4.0"
   }
 }

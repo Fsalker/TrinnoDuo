@@ -1,9 +1,18 @@
 module.exports = {
+  resetDatabase: async(client) => {
+    await client.query(`DROP TABLE IF EXISTS users`)
+    await client.query(`DROP TABLE IF EXISTS sessions`)
+    await client.query(`DROP TABLE IF EXISTS boards`)
+    await client.query(`DROP TABLE IF EXISTS lists`)
+    await client.query(`DROP TABLE IF EXISTS cards`)
+    await client.query(`DROP TABLE IF EXISTS user_to_board`)
+  },
+
   initialiseDatabase: async(client) => {
     await client.query(`DROP TABLE IF EXISTS users`)
     await client.query(`DROP TABLE IF EXISTS sessions`)
     await client.query(`DROP TABLE IF EXISTS boards`)
-    await client.query(`DROP TABLE IF EXISTS board_lists`)
+    //await client.query(`DROP TABLE IF EXISTS board_lists`)
     await client.query(`DROP TABLE IF EXISTS lists`)
     await client.query(`DROP TABLE IF EXISTS cards`)
     await client.query(`DROP TABLE IF EXISTS user_to_board`)
@@ -62,7 +71,7 @@ module.exports = {
       RETURNS TRIGGER AS $$
       BEGIN
           NEW.last_updated = now();
-          RETURN NEW;   
+          RETURN NEW;
       END;
       $$ language 'plpgsql';
       

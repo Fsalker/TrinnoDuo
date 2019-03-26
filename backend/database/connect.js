@@ -1,4 +1,12 @@
 require("dotenv").config()
+let Sequelize = require("sequelize")
+let sequelize = new Sequelize(`postgres://${process.env.PGUSER}:${process.env.PGPASSWORD}@localhost:${process.env.PGPORT}/${process.env.PGDATABASE}`)
+
 let {Pool} = require("pg")
 
-module.exports = async() => new Pool().connect()
+module.exports = {
+  createConnection: async() => new Pool().connect(),
+  sequelize
+}
+
+//module.exports = sequelize
