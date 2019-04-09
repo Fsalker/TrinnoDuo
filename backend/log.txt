@@ -1495,3 +1495,280 @@
 [2019/02/26 - 17:19:18] error: null value in column "createdAt" violates not-null constraint
 [2019/02/26 - 17:19:56] Server listening on 7331
 [2019/02/26 - 17:19:56] error: null value in column "createdAt" violates not-null constraint
+[2019/03/10 - 00:09:05] Server listening on 4321
+[2019/03/10 - 00:09:05] error: null value in column "createdAt" violates not-null constraint
+[2019/03/10 - 00:09:20] Server listening on 4321
+[2019/03/10 - 00:09:20] error: null value in column "createdAt" violates not-null constraint
+[2019/03/10 - 00:09:32] Server listening on 1234
+[2019/03/10 - 00:10:32] Server listening on 4321
+[2019/03/10 - 00:10:32] error: null value in column "createdAt" violates not-null constraint
+[2019/03/10 - 00:23:39] An error has occurred when adding Route cards
+[2019/03/10 - 00:23:39] SyntaxError: Unexpected identifier
+[2019/03/10 - 00:23:39] Server listening on 4321
+[2019/03/10 - 00:23:39] error: null value in column "createdAt" violates not-null constraint
+[2019/03/10 - 00:25:22] An error has occurred when adding Route cards
+[2019/03/10 - 00:25:22] SyntaxError: Unexpected identifier
+[2019/03/10 - 00:25:22] Server listening on 1234
+[2019/03/10 - 00:25:55] Server listening on 1234
+[2019/03/10 - 00:26:19] Server listening on 1234
+[2019/03/10 - 00:26:53] Server listening on 1234
+[2019/03/10 - 00:27:07] Server listening on 1234
+[2019/03/10 - 00:27:22] Server listening on 1234
+[2019/03/10 - 00:27:27] Server listening on 1234
+[2019/03/10 - 00:27:42] Server listening on 1234
+[2019/03/10 - 00:27:52] Server listening on 1234
+[2019/03/10 - 00:28:03] Server listening on 1234
+[2019/03/10 - 00:28:16] Server listening on 1234
+[2019/03/10 - 00:28:27] Server listening on 1234
+[2019/03/10 - 00:28:37] Server listening on 1234
+[2019/03/10 - 00:29:08] Server listening on 1234
+[2019/03/10 - 00:29:18] Server listening on 1234
+[2019/03/10 - 00:29:49] Server listening on 1234
+[2019/03/10 - 00:29:51] Server listening on 1234
+[2019/03/10 - 00:29:56] Server listening on 1234
+[2019/03/10 - 00:30:12] Server listening on 1234
+[2019/03/10 - 00:32:52] Server listening on 1234
+[2019/03/10 - 00:33:10] Server listening on 1234
+[2019/03/10 - 00:33:22] Server listening on 1234
+[2019/03/10 - 00:33:42] Server listening on 1234
+[2019/03/10 - 00:34:06] Server listening on 1234
+[2019/03/10 - 00:34:22] Server listening on 1234
+[2019/03/10 - 00:34:45] Server listening on 1234
+[2019/03/10 - 00:35:27] Server listening on 1234
+[2019/03/10 - 00:35:30] Server listening on 1234
+[2019/03/10 - 00:39:31] Server listening on 1234
+[2019/03/10 - 00:39:42] Server listening on 1234
+[2019/03/10 - 00:39:51] Server listening on 1234
+[2019/03/10 - 00:40:22] Server listening on 1234
+[2019/03/10 - 00:41:37] Server listening on 1234
+[2019/03/10 - 00:41:41] Server listening on 1234
+[2019/03/10 - 00:43:13] Server listening on 1234
+[2019/03/10 - 00:43:36] Server listening on 1234
+[2019/03/10 - 00:44:19] Server listening on 1234
+[2019/03/10 - 00:44:28] Server listening on 1234
+[2019/03/10 - 00:44:37] Server listening on 1234
+[2019/03/10 - 00:44:44] Server listening on 1234
+[2019/03/10 - 00:44:51] Server listening on 1234
+[2019/03/10 - 00:45:00] Server listening on 1234
+[2019/03/10 - 00:45:10] Server listening on 1234
+[2019/03/10 - 00:46:23] Server listening on 1234
+[2019/03/10 - 00:49:11] Server listening on 1234
+[2019/03/10 - 00:49:18] Server listening on 1234
+[2019/03/10 - 00:49:34] Server listening on 1234
+[2019/03/10 - 00:50:14] Server listening on 1234
+[2019/03/10 - 00:50:28] Server listening on 1234
+[2019/03/10 - 00:50:51] Server listening on 1234
+[2019/03/10 - 00:50:57] Server listening on 1234
+[2019/03/10 - 00:51:13] Server listening on 1234
+[2019/03/10 - 00:51:20] Server listening on 1234
+[2019/03/10 - 00:51:28] Server listening on 1234
+[2019/03/10 - 00:51:41] Server listening on 1234
+[2019/03/10 - 00:51:47] Server listening on 1234
+[2019/03/10 - 00:52:00] Server listening on 1234
+[2019/03/10 - 00:52:22] Server listening on 1234
+[2019/03/10 - 00:52:32] Server listening on 1234
+[2019/03/10 - 00:52:40] Server listening on 1234
+[2019/03/10 - 00:53:42] Server listening on 1234
+[2019/03/10 - 00:53:45] Server listening on 1234
+[2019/03/10 - 00:53:47] Server listening on 1234
+[2019/03/10 - 00:53:51] Server listening on 1234
+[2019/03/10 - 00:53:53] Server listening on 1234
+[2019/03/10 - 00:54:07] Server listening on 1234
+[2019/03/10 - 00:54:13] Server listening on 1234
+[2019/03/10 - 00:54:33] Server listening on 1234
+[2019/03/10 - 00:54:37] Server listening on 1234
+[2019/03/10 - 00:54:43] Server listening on 1234
+[2019/03/10 - 00:54:53] Server listening on 1234
+[2019/03/10 - 00:54:56] Server listening on 1234
+[2019/03/10 - 00:55:33] Server listening on 1234
+[2019/03/10 - 00:55:39] Server listening on 1234
+[2019/03/10 - 00:57:05] Server listening on 1234
+[2019/03/10 - 00:57:09] Server listening on 1234
+[2019/03/10 - 00:57:12] Server listening on 1234
+[2019/03/10 - 00:57:56] Server listening on 1234
+[2019/03/10 - 00:58:05] Server listening on 1234
+[2019/03/10 - 00:58:09] Server listening on 1234
+[2019/03/10 - 00:59:53] Server listening on 1234
+[2019/03/10 - 01:00:06] Server listening on 1234
+[2019/03/10 - 01:00:16] Server listening on 1234
+[2019/03/10 - 01:00:19] Server listening on 1234
+[2019/03/10 - 01:00:20] Server listening on 1234
+[2019/03/10 - 01:00:27] Server listening on 1234
+[2019/03/10 - 01:00:30] Server listening on 1234
+[2019/03/10 - 01:00:31] Server listening on 1234
+[2019/03/10 - 01:00:35] Server listening on 1234
+[2019/03/10 - 01:00:37] Server listening on 1234
+[2019/03/10 - 01:00:42] Server listening on 1234
+[2019/03/10 - 01:00:46] Server listening on 1234
+[2019/03/10 - 01:01:51] An error has occurred when adding Route users
+[2019/03/10 - 01:01:51] SyntaxError: Lexical declaration cannot appear in a single-statement context
+[2019/03/10 - 01:01:51] Server listening on 1234
+[2019/03/10 - 01:01:56] An error has occurred when adding Route users
+[2019/03/10 - 01:01:56] Server listening on 1234
+[2019/03/10 - 01:01:56] SyntaxError: Lexical declaration cannot appear in a single-statement context
+[2019/03/10 - 01:02:06] An error has occurred when adding Route users
+[2019/03/10 - 01:02:06] SyntaxError: Lexical declaration cannot appear in a single-statement context
+[2019/03/10 - 01:02:06] Server listening on 1234
+[2019/03/10 - 01:02:20] An error has occurred when adding Route users
+[2019/03/10 - 01:02:20] SyntaxError: Lexical declaration cannot appear in a single-statement context
+[2019/03/10 - 01:02:20] Server listening on 1234
+[2019/03/10 - 01:02:30] An error has occurred when adding Route users
+[2019/03/10 - 01:02:30] SyntaxError: Lexical declaration cannot appear in a single-statement context
+[2019/03/10 - 01:02:30] Server listening on 1234
+[2019/03/10 - 01:02:42] Server listening on 1234
+[2019/03/10 - 01:03:05] Server listening on 1234
+[2019/03/10 - 01:03:17] Server listening on 1234
+[2019/03/10 - 01:03:19] Server listening on 1234
+[2019/03/10 - 01:03:28] Server listening on 1234
+[2019/03/10 - 01:03:35] Server listening on 1234
+[2019/03/10 - 01:03:41] Server listening on 1234
+[2019/03/10 - 01:03:56] Server listening on 1234
+[2019/03/10 - 01:04:30] Server listening on 1234
+[2019/03/10 - 01:04:32] Server listening on 1234
+[2019/03/10 - 01:04:58] Server listening on 1234
+[2019/03/10 - 01:05:02] Server listening on 1234
+[2019/03/10 - 01:05:50] Server listening on 1234
+[2019/03/10 - 01:06:03] Server listening on 4321
+[2019/03/10 - 01:06:03] error: relation "users" does not exist
+[2019/03/10 - 01:07:13] Server listening on 1234
+[2019/03/10 - 01:07:23] Server listening on 1234
+[2019/03/10 - 01:07:37] TypeError: Cannot read property 'findAll' of undefined
+[2019/03/10 - 01:07:49] Server listening on 1234
+[2019/03/10 - 01:07:59] An error has occurred when adding Route users
+[2019/03/10 - 01:07:59] SyntaxError: await is only valid in async function
+[2019/03/10 - 01:07:59] Server listening on 1234
+[2019/03/10 - 01:08:06] An error has occurred when adding Route users
+[2019/03/10 - 01:08:06] TypeError: Router.use() requires a middleware function
+[2019/03/10 - 01:08:06] Server listening on 1234
+[2019/03/10 - 01:08:58] An error has occurred when adding Route users
+[2019/03/10 - 01:08:58] TypeError: Router.use() requires a middleware function
+[2019/03/10 - 01:08:58] Server listening on 1234
+[2019/03/10 - 01:09:00] An error has occurred when adding Route users
+[2019/03/10 - 01:09:00] TypeError: Router.use() requires a middleware function
+[2019/03/10 - 01:09:00] Server listening on 1234
+[2019/03/10 - 01:09:53] Server listening on 1234
+[2019/03/10 - 01:10:03] Server listening on 1234
+[2019/03/10 - 01:10:03] TypeError: Cannot read property 'findAll' of undefined
+[2019/03/10 - 01:10:14] Server listening on 1234
+[2019/03/10 - 01:11:06] Server listening on 1234
+[2019/03/10 - 01:11:06] An error has occurred when adding Route users
+[2019/03/10 - 01:11:06] TypeError: Cannot destructure property `Users` of 'undefined' or 'null'.
+[2019/03/10 - 01:11:23] Server listening on 1234
+[2019/03/10 - 01:11:23] An error has occurred when adding Route users
+[2019/03/10 - 01:11:23] TypeError: Cannot destructure property `Users` of 'undefined' or 'null'.
+[2019/03/10 - 01:17:03] Server listening on 1234
+[2019/03/10 - 01:17:03] An error has occurred when adding Route users
+[2019/03/10 - 01:17:03] TypeError: Cannot read property 'models' of undefined
+[2019/03/10 - 01:17:08] Server listening on 1234
+[2019/03/10 - 01:17:08] An error has occurred when adding Route users
+[2019/03/10 - 01:17:08] TypeError: Cannot read property 'model' of undefined
+[2019/03/10 - 01:17:26] Server listening on 1234
+[2019/03/10 - 01:17:26] An error has occurred when adding Route users
+[2019/03/10 - 01:17:26] TypeError: Cannot read property 'models' of undefined
+[2019/03/10 - 01:17:47] Server listening on 1234
+[2019/03/10 - 01:17:47] An error has occurred when adding Route users
+[2019/03/10 - 01:17:47] TypeError: Cannot read property 'models' of undefined
+[2019/03/10 - 01:18:10] Server listening on 1234
+[2019/03/10 - 01:18:10] An error has occurred when adding Route users
+[2019/03/10 - 01:18:10] TypeError: Cannot read property 'models' of undefined
+[2019/03/10 - 01:18:16] An error has occurred when adding Route users
+[2019/03/10 - 01:18:16] TypeError: Cannot read property 'models' of undefined
+[2019/03/10 - 01:18:38] An error has occurred when adding Route users
+[2019/03/10 - 01:18:38] TypeError: Cannot read property 'models' of undefined
+[2019/03/10 - 01:19:03] An error has occurred when adding Route users
+[2019/03/10 - 01:19:03] TypeError: Cannot read property 'models' of undefined
+[2019/03/10 - 01:19:03] Server listening on 1234
+[2019/03/10 - 01:19:32] Server listening on 1234
+[2019/03/10 - 01:19:41] Server listening on 1234
+[2019/03/10 - 01:19:53] Server listening on 1234
+[2019/03/10 - 01:19:57] Server listening on 1234
+[2019/03/10 - 01:20:00] TypeError: Cannot read property 'dataValues' of undefined
+[2019/03/10 - 01:20:12] Server listening on 1234
+[2019/03/10 - 01:20:13] TypeError: Cannot read property 'dataValues' of undefined
+[2019/03/10 - 01:20:31] Server listening on 1234
+[2019/03/10 - 01:20:32] SequelizeValidationError: notNull Violation: Users.username cannot be null,
+notNull Violation: Users.password cannot be null
+[2019/03/10 - 01:20:40] Server listening on 1234
+[2019/03/10 - 01:20:40] TypeError: Cannot read property 'dataValues' of undefined
+[2019/03/10 - 01:20:46] Server listening on 1234
+[2019/03/10 - 01:20:46] TypeError: Cannot read property 'dataValues' of undefined
+[2019/03/10 - 01:20:58] Server listening on 1234
+[2019/03/10 - 01:21:01] TypeError: Cannot read property 'dataValues' of undefined
+[2019/03/10 - 01:21:48] Server listening on 1234
+[2019/03/10 - 01:21:53] TypeError: Cannot read property 'dataValues' of undefined
+[2019/03/10 - 01:22:05] Server listening on 1234
+[2019/03/10 - 01:22:06] TypeError: Cannot read property 'dataValues' of undefined
+[2019/03/10 - 01:23:29] Server listening on 1234
+[2019/03/10 - 01:24:14] Server listening on 1234
+[2019/03/10 - 01:24:19] Server listening on 1234
+[2019/03/10 - 01:25:12] Server listening on 1234
+[2019/03/10 - 01:25:20] Server listening on 1234
+[2019/03/10 - 01:25:27] Server listening on 1234
+[2019/03/10 - 01:25:44] Server listening on 1234
+[2019/03/10 - 01:25:48] Server listening on 1234
+[2019/03/10 - 01:26:09] Server listening on 1234
+[2019/03/10 - 01:26:25] Server listening on 1234
+[2019/03/10 - 01:26:53] Server listening on 1234
+[2019/03/10 - 01:27:19] Server listening on 1234
+[2019/03/10 - 01:27:22] Server listening on 1234
+[2019/03/10 - 01:28:04] Server listening on 1234
+[2019/03/10 - 01:29:01] Server listening on 1234
+[2019/03/10 - 01:29:15] Server listening on 1234
+[2019/03/10 - 01:29:29] Server listening on 1234
+[2019/03/10 - 01:32:50] Server listening on 4321
+[2019/03/10 - 01:32:50] TypeError: req.client.query is not a function
+[2019/03/10 - 01:33:32] Server listening on 1234
+[2019/03/10 - 01:37:22] Server listening on 1234
+[2019/03/10 - 01:43:24] Server listening on 1234
+[2019/03/10 - 01:43:53] Server listening on 1234
+[2019/03/10 - 01:45:11] Server listening on 1234
+[2019/03/10 - 01:47:43] Server listening on 4321
+[2019/03/10 - 01:47:43] TypeError: Users.find is not a function
+[2019/03/10 - 01:47:55] Server listening on 1234
+[2019/03/10 - 01:48:02] Server listening on 1234
+[2019/03/10 - 01:48:05] Server listening on 4321
+[2019/03/10 - 01:48:05] SequelizeUniqueConstraintError: Validation error
+[2019/03/10 - 01:48:25] Server listening on 4321
+[2019/03/10 - 01:48:26] SequelizeUniqueConstraintError: Validation error
+[2019/03/10 - 01:48:34] Server listening on 4321
+[2019/03/10 - 01:48:34] SequelizeUniqueConstraintError: Validation error
+[2019/03/10 - 01:49:52] Server listening on 1234
+[2019/03/10 - 01:49:59] Server listening on 1234
+[2019/03/10 - 01:50:03] Server listening on 4321
+[2019/03/10 - 01:50:03] TypeError: req.client.query is not a function
+[2019/03/10 - 01:57:19] Server listening on 1234
+[2019/03/10 - 01:57:50] Server listening on 1234
+[2019/03/10 - 01:57:56] Server listening on 1234
+[2019/03/10 - 01:58:09] Server listening on 1234
+[2019/03/10 - 01:58:25] Server listening on 1234
+[2019/03/10 - 01:58:39] Server listening on 1234
+[2019/03/10 - 01:58:46] Server listening on 1234
+[2019/03/10 - 01:59:05] Server listening on 1234
+[2019/03/10 - 01:59:09] Server listening on 4321
+[2019/03/10 - 01:59:16] Server listening on 1234
+[2019/03/10 - 01:59:19] Server listening on 4321
+[2019/03/10 - 01:59:24] Server listening on 1234
+[2019/03/10 - 01:59:26] Server listening on 4321
+[2019/03/10 - 01:59:54] Server listening on 1234
+[2019/03/10 - 01:59:57] Server listening on 4321
+[2019/03/10 - 02:00:00] Server listening on 1234
+[2019/03/10 - 02:00:05] Server listening on 4321
+[2019/03/10 - 02:00:14] Server listening on 1234
+[2019/03/10 - 02:00:16] Server listening on 4321
+[2019/03/10 - 02:00:44] Server listening on 1234
+[2019/03/10 - 02:00:45] Server listening on 4321
+[2019/03/10 - 02:01:48] Server listening on 1234
+[2019/03/10 - 02:01:50] Server listening on 1234
+[2019/03/10 - 02:01:56] An error has occurred when adding Route users
+[2019/03/10 - 02:01:56] SyntaxError: Unexpected token }
+[2019/03/10 - 02:01:56] Server listening on 1234
+[2019/03/10 - 02:02:10] Server listening on 1234
+[2019/03/10 - 02:02:17] Server listening on 1234
+[2019/03/10 - 02:02:20] Server listening on 4321
+[2019/03/10 - 02:02:21] TypeError: Sessions.findOne is not a function
+[2019/03/10 - 02:02:28] Server listening on 1234
+[2019/03/10 - 02:02:40] Server listening on 1234
+[2019/03/10 - 02:02:46] Server listening on 1234
+[2019/03/10 - 02:02:58] Server listening on 4321
+[2019/03/10 - 02:02:58] TypeError: Sessions.findOne is not a function
+[2019/03/10 - 02:04:04] Server listening on 1234

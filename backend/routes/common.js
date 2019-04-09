@@ -16,23 +16,23 @@ module.exports = {
     console.log(msg)
   },
   hashify: (word) => require("crypto").createHash("sha256").update(word).digest("hex"),
-  createSession: async(client, user_id) => {
+  createSession: async(Sessions, user) => {
     let crypto = require("crypto")
     let session = crypto.randomBytes(32).toString("hex")
-    await client.query("INSERT INTO sessions(user_id, session) VALUES($1, $2)", [user_id, session])
+    let S = await Sessions.create({session})
+    await S.setUser(user)
 
     return session
   },
-  authentificateUserWithSession: async(client, session) =>
-    (await client.query("SELECT id FROM sessions WHERE session = $1", [session])).rows.length > 0,
-  authentificateUserWithUsernamePassword: async(client, username, password) => {
+  authentificateUserWithSession: async(Sessions, session) =>
+    await Sessions.findOne({where: {session}}),
+  authentificateUserWithUsernamePassword: async(Sessions, Users, username, password) => {
     password_hashed = module.exports.hashify()
-    let r = await client.query("SELECT id FROM users WHERE username = $1 AND password = $2", [username, password_hashed])
-    if(r.rows.length == 0)
+    // let r = await client.query("SELECT id FROM users WHERE username = $1 AND password = $2", [username, password_hashed])
+    let user = await Users.findOne({where: {username, password}})
+    if(!user)
       return false
-
-    let user_id = r.rows[0].id
-    return await module.exports.createSession(client, user_id)
+    return await module.exports.createSession(Sessions, user)
   },
   getIdFromSession: async(client, session) => (await client.query("SELECT user_id FROM sessions WHERE session = $1", [session])).rows[0].user_id,
   validateBoardOwnership: async(client, user_id, board_id) => {

@@ -1,13 +1,13 @@
 module.exports = async(sequelizeConnection) => {
   try{
     let Sequelize = require("sequelize")
-    class sessions extends Sequelize.Model{}
-    sessions.init({
+    class Sessions extends Sequelize.Model{}
+    Sessions.init({
       id: {type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true},
-      user_id: {type: Sequelize.INTEGER, allowNull: false},
       session: {type: Sequelize.TEXT, allowNull: false},
     }, {sequelize: sequelizeConnection})
 
-    await sessions.sync()
+    // await Sessions.sync()
+    return Sessions
   }catch(e){console.log(e)}
 }

@@ -6,6 +6,8 @@ module.exports = (args) => {
       let {list_id, title} = req.body.data
       if(!(await args.authentificateUserWithSession(req.client, req.body.auth.session))) return res.status(401).end()
       let board_id = (await req.client.query("SELECT board_id FROM lists WHERE id = $1", [list_id])).rows[0].board_id
+      // let board_id = await req.sequelize.
+
       let user_id = await args.getIdFromSession(req.client, req.body.auth.session)
       if(!(await args.validateBoardOwnership(req.client, user_id, board_id))) return res.status(403).end()
 
