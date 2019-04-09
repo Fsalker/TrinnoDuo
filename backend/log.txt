@@ -1390,3 +1390,10 @@
 [2019/01/19 - 10:00:19] Server listening on 7331
 [2019/03/10 - 02:07:42] Server listening on 1234
 [2019/03/10 - 02:07:46] Server listening on 1234
+[2019/03/10 - 02:13:30] Server listening on 1234
+[2019/03/10 - 02:13:42] Server listening on 4321
+[2019/03/10 - 02:13:42] error: null value in column "createdAt" violates not-null constraint
+[2019/03/10 - 02:13:42] error: null value in column "createdAt" violates not-null constraint
+[2019/03/10 - 02:14:10] Server listening on 1234
+[2019/03/10 - 02:14:13] Server listening on 4321
+[2019/03/10 - 02:14:16] Server listening on 1234

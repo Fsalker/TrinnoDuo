@@ -27,6 +27,12 @@ describe("CRUD APIs", async() => {
   let LIST_ID
   let CARD_ID
 
+  let API_USERS = "users"
+  let API_LOGIN = "login"
+  let API_BOARDS = "boards"
+  let API_LISTS = "lists"
+  let API_CARDS = "cards"
+
   //
   //const SESSION_LENGTH = 64
 
@@ -38,7 +44,7 @@ describe("CRUD APIs", async() => {
 
   describe("Users", async() => {
     it("Should Delete User 1", async() => {
-      let api = "users"
+      let api = API_USERS
       let method = "DELETE"
       let uri = `${HOST}/${api}`
       let auth = {}
@@ -47,7 +53,7 @@ describe("CRUD APIs", async() => {
     })
 
     it("Should Delete User 2", async() => {
-      let api = "users"
+      let api = API_USERS
       let method = "DELETE"
       let uri = `${HOST}/${api}`
       let auth = {}
@@ -56,7 +62,7 @@ describe("CRUD APIs", async() => {
     })
 
     it("Should Create User 1", async() => {
-      let api = "users"
+      let api = API_USERS
       let method = "POST"
       let uri = `${HOST}/${api}`
       let auth = {}
@@ -68,7 +74,7 @@ describe("CRUD APIs", async() => {
     })
 
     it("Should Create User 2", async() => {
-      let api = "users"
+      let api = API_USERS
       let method = "POST"
       let uri = `${HOST}/${api}`
       let auth = {}
@@ -80,7 +86,7 @@ describe("CRUD APIs", async() => {
     })
 
     it("Should Login User 1", async() => {
-      let api = "login"
+      let api = API_LOGIN
       let method = "POST"
       let uri = `${HOST}/${api}`
       let auth = {}
@@ -91,7 +97,7 @@ describe("CRUD APIs", async() => {
     })
 
     it("Should Login User 2", async() => {
-      let api = "login"
+      let api = API_LOGIN
       let method = "POST"
       let uri = `${HOST}/${api}`
       let auth = {}
@@ -102,7 +108,7 @@ describe("CRUD APIs", async() => {
     })
 
     it("Should get all Users for User 1", async() => {
-      let api = "users"
+      let api = API_USERS
       let method = "GET"
       let uri = `${HOST}/${api}/${SESSION_1}`
       let r = await request({uri, method})
@@ -119,7 +125,7 @@ describe("CRUD APIs", async() => {
 
   describe("Boards", async() => {
     it("Should create Board for User 1", async() => {
-      let api = "boards"
+      let api = API_BOARDS
       let method = "POST"
       let uri = `${HOST}/${api}`
       let auth = {session: SESSION_1}
@@ -131,7 +137,7 @@ describe("CRUD APIs", async() => {
     })
 
     it("Should edit Board", async() => {
-      let api = "boards"
+      let api = API_BOARDS
       let method = "PUT"
       let uri = `${HOST}/${api}`
       let auth = {session: SESSION_1}
@@ -140,7 +146,7 @@ describe("CRUD APIs", async() => {
     })
 
     it("Should get Boards for User 1 (1 board)", async() => {
-      let api = "boards"
+      let api = API_BOARDS
       let method = "GET"
       let uri = `${HOST}/${api}/${SESSION_1}`
       let r = await request({uri, method})
@@ -153,7 +159,7 @@ describe("CRUD APIs", async() => {
     })
 
     it("Should get Boards for User 2 (no boards)", async() => {
-      let api = "boards"
+      let api = API_BOARDS
       let method = "GET"
       let uri = `${HOST}/${api}/${SESSION_2}`
       let r = await request({uri, method})
@@ -164,7 +170,7 @@ describe("CRUD APIs", async() => {
     })
 
     it("Should get Board 1 for User 1", async() => {
-      let api = "boards"
+      let api = API_BOARDS
       let method = "GET"
       let uri = `${HOST}/${api}/${SESSION_1}/${BOARD_ID}`
       let r = await request({uri, method})
@@ -176,7 +182,7 @@ describe("CRUD APIs", async() => {
 
   describe("Lists", async() => {
     it("Should create List for Board 1 for User 1", async() => {
-      let api = "lists"
+      let api = API_LISTS
       let method = "POST"
       let uri = `${HOST}/${api}`
       let auth = {session: SESSION_1}
@@ -188,7 +194,7 @@ describe("CRUD APIs", async() => {
     })
 
     it("Should edit List", async() => {
-      let api = "lists"
+      let api = API_LISTS
       let method = "PUT"
       let uri = `${HOST}/${api}`
       let auth = {session: SESSION_1}
@@ -197,7 +203,7 @@ describe("CRUD APIs", async() => {
     })
 
     it("Should get Lists for Board 1 for User 1", async() => {
-      let api = "lists"
+      let api = API_LISTS
       let method = "GET"
       let uri = `${HOST}/${api}/${SESSION_1}/${BOARD_ID}`
       let r = await request({uri, method})
@@ -212,7 +218,7 @@ describe("CRUD APIs", async() => {
 
   describe("Cards", async() => {
     it("Should create Card for List 1 for User 1", async () => {
-      let api = "cards"
+      let api = API_CARDS
       let method = "POST"
       let uri = `${HOST}/${api}`
       let auth = {session: SESSION_1}
@@ -224,7 +230,7 @@ describe("CRUD APIs", async() => {
     })
 
     it("Should edit Card 1", async () => {
-      let api = "cards"
+      let api = API_CARDS
       let method = "PUT"
       let uri = `${HOST}/${api}`
       let auth = {session: SESSION_1}
@@ -233,7 +239,7 @@ describe("CRUD APIs", async() => {
     })
 
     it("Should get Cards for User 1", async () => {
-      let api = "cards"
+      let api = API_CARDS
       let method = "GET"
       let uri = `${HOST}/${api}/${SESSION_1}/${LIST_ID}`
       let r = await request({uri, method})
@@ -246,7 +252,7 @@ describe("CRUD APIs", async() => {
     })
 
     it("Should get Card 1 for User 1", async () => {
-      let api = "cards"
+      let api = API_CARDS
       let method = "GET"
       let uri = `${HOST}/${api}/${SESSION_1}/${LIST_ID}/${CARD_ID}`
       let r = await request({uri, method})
@@ -258,7 +264,7 @@ describe("CRUD APIs", async() => {
 
   describe("Deleting everything", async() => {
     it("Should Delete Card 1", async() => {
-      let api = "cards"
+      let api = API_CARDS
       let method = "DELETE"
       let uri = `${HOST}/${api}`
       let auth = {session: SESSION_1}
@@ -267,7 +273,7 @@ describe("CRUD APIs", async() => {
     })
 
     it("Should Delete List 1", async() => {
-      let api = "lists"
+      let api = API_LISTS
       let method = "DELETE"
       let uri = `${HOST}/${api}`
       let auth = {session: SESSION_1}
@@ -276,7 +282,7 @@ describe("CRUD APIs", async() => {
     })
 
     it("Should Delete Board 1", async() => {
-      let api = "boards"
+      let api = API_BOARDS
       let method = "DELETE"
       let uri = `${HOST}/${api}`
       let auth = {session: SESSION_1}
@@ -285,7 +291,7 @@ describe("CRUD APIs", async() => {
     })
 
     it("Should Delete User 1", async() => {
-      let api = "users"
+      let api = API_USERS
       let method = "DELETE"
       let uri = `${HOST}/${api}`
       let auth = {session: SESSION_1}
@@ -294,7 +300,7 @@ describe("CRUD APIs", async() => {
     })
 
     it("Should Delete User 2", async() => {
-      let api = "users"
+      let api = API_USERS
       let method = "DELETE"
       let uri = `${HOST}/${api}`
       let auth = {session: SESSION_2}
