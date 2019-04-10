@@ -1772,3 +1772,285 @@ notNull Violation: Users.password cannot be null
 [2019/03/10 - 02:02:58] Server listening on 4321
 [2019/03/10 - 02:02:58] TypeError: Sessions.findOne is not a function
 [2019/03/10 - 02:04:04] Server listening on 1234
+[2019/03/10 - 02:28:47] Server listening on 4321
+[2019/03/10 - 02:28:47] TypeError: Sessions.findOne is not a function
+[2019/03/10 - 02:31:08] Server listening on 1234
+[2019/03/10 - 02:31:33] Server listening on 1234
+[2019/03/10 - 02:36:39] Server listening on 1234
+[2019/03/10 - 02:36:42] Server listening on 1234
+[2019/03/10 - 02:36:47] Server listening on 1234
+[2019/03/10 - 02:36:55] Server listening on 1234
+[2019/03/10 - 02:36:59] Server listening on 1234
+[2019/03/10 - 02:37:02] Server listening on 4321
+[2019/03/10 - 02:37:02] ReferenceError: session is not defined
+[2019/03/10 - 02:37:25] Server listening on 1234
+[2019/03/10 - 02:37:27] Server listening on 1234
+[2019/03/10 - 02:39:22] Server listening on 1234
+[2019/03/10 - 02:39:23] Server listening on 4321
+[2019/03/10 - 02:39:24] ReferenceError: session is not defined
+[2019/03/10 - 02:39:39] Server listening on 1234
+[2019/03/10 - 02:39:41] Server listening on 4321
+[2019/03/10 - 02:39:41] TypeError: Sessions.find is not a function
+[2019/03/10 - 02:39:47] Server listening on 1234
+[2019/03/10 - 02:39:49] Server listening on 4321
+[2019/03/10 - 02:39:49] 123
+[2019/03/10 - 02:40:01] Server listening on 1234
+[2019/03/10 - 02:40:04] Server listening on 4321
+[2019/03/10 - 02:40:04] 123
+[2019/03/10 - 02:41:51] Server listening on 1234
+[2019/03/10 - 02:41:53] Server listening on 1234
+[2019/03/10 - 02:41:56] Server listening on 4321
+[2019/03/10 - 02:41:56] 123
+[2019/03/10 - 02:45:24] Server listening on 1234
+[2019/03/10 - 02:45:32] Server listening on 1234
+[2019/03/10 - 02:46:14] Server listening on 1234
+[2019/03/10 - 02:46:16] Server listening on 1234
+[2019/03/10 - 02:46:18] Server listening on 1234
+[2019/03/10 - 02:46:31] Server listening on 4321
+[2019/03/10 - 02:46:31] ReferenceError: board_id is not defined
+[2019/03/10 - 02:46:52] An error has occurred when adding Route boards
+[2019/03/10 - 02:46:52] SyntaxError: Unexpected token .
+[2019/03/10 - 02:46:52] Server listening on 1234
+[2019/03/10 - 02:46:54] An error has occurred when adding Route boards
+[2019/03/10 - 02:46:54] Server listening on 4321
+[2019/03/10 - 02:46:54] SyntaxError: Unexpected token .
+[2019/03/10 - 02:47:02] Server listening on 1234
+[2019/03/10 - 02:47:04] Server listening on 4321
+[2019/03/10 - 02:47:04] TypeError: client.query is not a function
+[2019/03/10 - 02:48:04] Server listening on 1234
+[2019/03/10 - 02:48:21] Server listening on 1234
+[2019/03/10 - 02:48:40] Server listening on 1234
+[2019/03/10 - 02:49:04] Server listening on 1234
+[2019/03/10 - 02:49:45] Server listening on 1234
+[2019/03/10 - 02:49:48] Server listening on 4321
+[2019/03/10 - 02:50:21] Server listening on 1234
+[2019/03/10 - 02:50:29] Server listening on 4321
+[2019/03/10 - 02:50:29] TypeError: Sessions.findOne is not a function
+[2019/03/10 - 02:52:03] Server listening on 1234
+[2019/03/10 - 02:52:15] Server listening on 1234
+[2019/03/10 - 02:52:33] Server listening on 4321
+[2019/03/10 - 02:52:33] TypeError: client.query is not a function
+[2019/03/10 - 02:53:15] An error has occurred when adding Route boards
+[2019/03/10 - 02:53:15] SyntaxError: Unexpected token .
+[2019/03/10 - 02:53:15] Server listening on 1234
+[2019/03/10 - 02:53:17] An error has occurred when adding Route boards
+[2019/03/10 - 02:53:17] SyntaxError: Unexpected token .
+[2019/03/10 - 02:53:17] Server listening on 4321
+[2019/03/10 - 02:53:26] Server listening on 1234
+[2019/03/10 - 02:53:27] Server listening on 4321
+[2019/03/10 - 02:53:28] TypeError: client.query is not a function
+[2019/03/10 - 02:55:02] Server listening on 1234
+[2019/03/10 - 02:55:14] Server listening on 1234
+[2019/03/10 - 02:55:59] Server listening on 1234
+[2019/03/10 - 02:56:10] Server listening on 1234
+[2019/03/10 - 02:56:28] An error has occurred when adding Route boards
+[2019/03/10 - 02:56:28] SyntaxError: Identifier 'B' has already been declared
+[2019/03/10 - 02:56:28] Server listening on 1234
+[2019/03/10 - 02:56:38] Server listening on 1234
+[2019/03/10 - 02:56:42] Server listening on 4321
+[2019/03/10 - 02:56:42] TypeError: Cannot read property 'session' of undefined
+[2019/03/10 - 02:57:44] Server listening on 1234
+[2019/03/10 - 02:57:58] Server listening on 1234
+[2019/03/10 - 02:58:12] Server listening on 1234
+[2019/03/10 - 02:58:20] Server listening on 4321
+[2019/03/10 - 02:58:20] ReferenceError: B is not defined
+[2019/03/10 - 02:59:29] Server listening on 1234
+[2019/03/10 - 02:59:32] Server listening on 4321
+[2019/03/10 - 02:59:32] ReferenceError: boards is not defined
+[2019/03/10 - 02:59:42] Server listening on 1234
+[2019/03/10 - 02:59:45] Server listening on 4321
+[2019/03/10 - 03:00:02] Server listening on 1234
+[2019/03/10 - 03:00:03] Server listening on 4321
+[2019/03/10 - 03:00:15] Server listening on 1234
+[2019/03/10 - 03:00:16] Server listening on 4321
+[2019/03/10 - 03:00:32] Server listening on 1234
+[2019/03/10 - 03:00:37] Server listening on 1234
+[2019/03/10 - 03:00:40] Server listening on 4321
+[2019/03/10 - 03:00:58] Server listening on 1234
+[2019/03/10 - 03:01:13] Server listening on 4321
+[2019/03/10 - 03:01:30] Server listening on 1234
+[2019/03/10 - 03:01:32] Server listening on 4321
+[2019/03/10 - 03:01:32] ReferenceError: Sessions is not defined
+[2019/03/10 - 03:02:43] Server listening on 1234
+[2019/03/10 - 03:03:29] Server listening on 1234
+[2019/03/10 - 03:04:00] Server listening on 1234
+[2019/03/10 - 03:04:03] Server listening on 4321
+[2019/03/10 - 03:04:04] ReferenceError: session is not defined
+[2019/03/10 - 03:04:22] Server listening on 1234
+[2019/03/10 - 03:04:26] Server listening on 4321
+[2019/03/10 - 03:04:26] SequelizeDatabaseError: invalid input syntax for integer: "[object SequelizeInstance:Sessions]"
+[2019/03/10 - 03:04:55] Server listening on 1234
+[2019/03/10 - 03:04:58] Server listening on 1234
+[2019/03/10 - 03:05:04] Server listening on 4321
+[2019/03/10 - 03:05:04] ReferenceError: Sessions is not defined
+[2019/03/10 - 03:06:10] Server listening on 1234
+[2019/03/10 - 03:06:18] Server listening on 4321
+[2019/03/10 - 03:06:18] ReferenceError: Sessions is not defined
+[2019/03/10 - 03:06:40] Server listening on 1234
+[2019/03/10 - 03:09:40] Server listening on 1234
+[2019/03/10 - 03:12:28] Server listening on 1234
+[2019/03/10 - 03:12:45] Server listening on 4321
+[2019/03/10 - 03:12:57] Server listening on 1234
+[2019/03/10 - 03:13:41] Server listening on 1234
+[2019/03/10 - 03:13:43] Server listening on 4321
+[2019/03/10 - 03:13:43] TypeError: L.addBoard is not a function
+[2019/03/10 - 03:15:25] Server listening on 1234
+[2019/03/10 - 03:15:30] Server listening on 1234
+[2019/03/10 - 03:22:58] Server listening on 4321
+[2019/03/10 - 03:22:58] TypeError: L.addBoard is not a function
+[2019/03/10 - 03:23:14] Server listening on 1234
+[2019/03/10 - 03:24:02] Server listening on 1234
+[2019/03/10 - 03:24:24] Server listening on 1234
+[2019/03/10 - 03:25:06] Server listening on 1234
+[2019/03/10 - 03:25:31] Server listening on 4321
+[2019/03/10 - 03:25:31] TypeError: L.addBoard is not a function
+[2019/03/10 - 03:25:38] Server listening on 1234
+[2019/03/10 - 03:25:40] Server listening on 4321
+[2019/03/10 - 03:25:40] TypeError: req.client.query is not a function
+[2019/03/10 - 03:26:26] Server listening on 1234
+[2019/03/10 - 03:26:47] Server listening on 1234
+[2019/03/10 - 03:26:49] Server listening on 4321
+[2019/03/10 - 03:26:49] TypeError: args.getIdFromSession is not a function
+[2019/03/10 - 04:11:18] An error has occurred when adding Route lists
+[2019/03/10 - 04:11:18] SyntaxError: Unexpected token ,
+[2019/03/10 - 04:11:18] Server listening on 1234
+[2019/03/10 - 04:12:23] An error has occurred when adding Route lists
+[2019/03/10 - 04:12:23] SyntaxError: Unexpected token ,
+[2019/03/10 - 04:12:23] Server listening on 1234
+[2019/03/10 - 04:13:31] An error has occurred when adding Route lists
+[2019/03/10 - 04:13:31] SyntaxError: Unexpected token ,
+[2019/03/10 - 04:13:31] Server listening on 1234
+[2019/03/10 - 04:13:57] An error has occurred when adding Route lists
+[2019/03/10 - 04:13:57] SyntaxError: Unexpected token ,
+[2019/03/10 - 04:13:57] Server listening on 1234
+[2019/03/10 - 04:22:24] An error has occurred when adding Route lists
+[2019/03/10 - 04:22:24] SyntaxError: Unexpected token ,
+[2019/03/10 - 04:22:24] Server listening on 1234
+[2019/03/10 - 04:23:58] An error has occurred when adding Route lists
+[2019/03/10 - 04:23:58] SyntaxError: Unexpected token ,
+[2019/03/10 - 04:23:58] Server listening on 1234
+[2019/03/10 - 04:25:06] An error has occurred when adding Route lists
+[2019/03/10 - 04:25:06] SyntaxError: Unexpected token ,
+[2019/03/10 - 04:25:06] Server listening on 1234
+[2019/03/10 - 04:26:11] Server listening on 1234
+[2019/03/10 - 04:26:31] Server listening on 4321
+[2019/03/10 - 04:26:31] TypeError: Cannot read property 'session' of undefined
+[2019/03/10 - 04:26:49] Server listening on 1234
+[2019/03/10 - 04:26:55] Server listening on 1234
+[2019/03/10 - 04:27:01] Server listening on 1234
+[2019/03/10 - 04:27:04] Server listening on 4321
+[2019/03/10 - 04:27:04] TypeError: B.getUsers is not a function
+[2019/03/10 - 04:27:16] An error has occurred when adding Route lists
+[2019/03/10 - 04:27:16] SyntaxError: Unexpected token )
+[2019/03/10 - 04:27:16] Server listening on 1234
+[2019/03/10 - 04:27:21] Server listening on 1234
+[2019/03/10 - 04:27:33] Server listening on 4321
+[2019/03/10 - 04:27:34] TypeError: B.getUsers is not a function
+[2019/03/10 - 04:30:09] Server listening on 1234
+[2019/03/10 - 04:31:48] Server listening on 4321
+[2019/03/10 - 04:31:49] TypeError: B.getUsers is not a function
+[2019/03/10 - 04:32:06] Server listening on 1234
+[2019/03/10 - 04:34:42] Server listening on 1234
+[2019/03/10 - 04:34:45] Server listening on 4321
+[2019/03/10 - 04:34:45] 123
+[2019/03/10 - 04:35:09] Server listening on 1234
+[2019/03/10 - 04:35:27] Server listening on 1234
+[2019/03/10 - 04:35:30] Server listening on 1234
+[2019/03/10 - 04:35:36] Server listening on 1234
+[2019/03/10 - 04:35:40] Server listening on 4321
+[2019/03/10 - 04:35:40] SequelizeDatabaseError: column Lists.boardId does not exist
+[2019/03/10 - 04:39:05] Server listening on 1234
+[2019/03/10 - 04:39:07] Server listening on 4321
+[2019/03/10 - 04:39:08] ReferenceError: Sessions is not defined
+[2019/03/10 - 04:40:25] Server listening on 1234
+[2019/03/10 - 04:40:28] Server listening on 1234
+[2019/03/10 - 04:42:57] Server listening on 1234
+[2019/03/10 - 04:43:25] Server listening on 1234
+[2019/03/10 - 04:44:35] Server listening on 1234
+[2019/03/10 - 04:44:45] Server listening on 1234
+[2019/03/10 - 04:44:49] Server listening on 1234
+[2019/03/10 - 04:45:11] Server listening on 4321
+[2019/03/10 - 04:45:12] ReferenceError: board_id is not defined
+[2019/03/10 - 04:45:47] Server listening on 1234
+[2019/03/10 - 04:45:49] Server listening on 4321
+[2019/03/10 - 04:45:49] TypeError: req.client.query is not a function
+[2019/03/10 - 04:46:47] Server listening on 1234
+[2019/03/10 - 04:46:55] Server listening on 1234
+[2019/03/10 - 04:47:19] Server listening on 1234
+[2019/03/10 - 04:48:04] Server listening on 1234
+[2019/03/10 - 04:49:39] Server listening on 4321
+[2019/03/10 - 04:49:40] TypeError: Cannot read property 'session' of undefined
+[2019/03/10 - 04:51:15] Server listening on 1234
+[2019/03/10 - 04:51:46] Server listening on 1234
+[2019/03/10 - 04:53:24] Server listening on 1234
+[2019/03/10 - 04:56:35] Server listening on 1234
+[2019/03/10 - 04:56:49] Server listening on 1234
+[2019/03/10 - 04:57:58] Server listening on 1234
+[2019/03/10 - 04:58:02] Server listening on 4321
+[2019/03/10 - 04:58:02] TypeError: Lists.find is not a function
+[2019/03/10 - 04:58:12] Server listening on 1234
+[2019/03/10 - 04:58:15] Server listening on 4321
+[2019/03/10 - 04:58:15] ReferenceError: title is not defined
+[2019/03/10 - 04:58:23] Server listening on 1234
+[2019/03/10 - 04:58:26] Server listening on 4321
+[2019/03/10 - 04:58:26] SequelizeDatabaseError: column Cards.list_id does not exist
+[2019/03/10 - 04:58:45] Server listening on 1234
+[2019/03/10 - 04:58:47] Server listening on 4321
+[2019/03/10 - 04:58:47] TypeError: req.client.query is not a function
+[2019/03/10 - 04:59:30] Server listening on 1234
+[2019/03/10 - 05:00:28] Server listening on 1234
+[2019/03/10 - 05:04:33] Server listening on 1234
+[2019/03/10 - 05:04:35] Server listening on 4321
+[2019/03/10 - 05:04:36] TypeError: req.client.query is not a function
+[2019/03/10 - 05:04:51] Server listening on 1234
+[2019/03/10 - 05:05:07] Server listening on 1234
+[2019/03/10 - 05:05:49] Server listening on 1234
+[2019/03/10 - 05:05:55] Server listening on 1234
+[2019/03/10 - 05:06:03] Server listening on 1234
+[2019/03/10 - 05:06:07] Server listening on 4321
+[2019/03/10 - 05:06:08] TypeError: req.client.query is not a function
+[2019/03/10 - 05:06:14] Server listening on 1234
+[2019/03/10 - 05:06:18] Server listening on 1234
+[2019/03/10 - 05:06:49] Server listening on 1234
+[2019/03/10 - 05:07:19] Server listening on 1234
+[2019/03/10 - 05:07:22] Server listening on 4321
+[2019/03/10 - 05:07:22] TypeError: args.getIdFromSession is not a function
+[2019/03/10 - 05:08:21] Server listening on 1234
+[2019/03/10 - 05:09:31] Server listening on 1234
+[2019/03/10 - 05:10:28] Server listening on 1234
+[2019/03/10 - 05:12:20] Server listening on 1234
+[2019/03/10 - 05:12:24] Server listening on 4321
+[2019/03/10 - 05:12:25] ReferenceError: Lists is not defined
+[2019/03/10 - 05:12:33] Server listening on 1234
+[2019/03/10 - 05:12:35] Server listening on 4321
+[2019/03/10 - 05:12:36] TypeError: req.client.query is not a function
+[2019/03/10 - 05:12:45] Server listening on 1234
+[2019/03/10 - 05:13:07] Server listening on 1234
+[2019/03/10 - 05:13:10] Server listening on 4321
+[2019/03/10 - 05:13:10] TypeError: req.client.query is not a function
+[2019/03/10 - 05:13:17] Server listening on 1234
+[2019/03/10 - 05:13:54] Server listening on 1234
+[2019/03/10 - 05:14:20] Server listening on 1234
+[2019/03/10 - 05:14:50] Server listening on 1234
+[2019/03/10 - 05:15:02] Server listening on 4321
+[2019/03/10 - 05:15:03] ReferenceError: sessions is not defined
+[2019/03/10 - 05:15:05] Server listening on 1234
+[2019/03/10 - 05:15:27] Server listening on 1234
+[2019/03/10 - 05:15:33] Server listening on 4321
+[2019/03/10 - 05:15:33] TypeError: Sessions.getUser is not a function
+[2019/03/10 - 05:17:01] Server listening on 1234
+[2019/03/10 - 05:17:03] Server listening on 4321
+[2019/03/10 - 05:17:19] Server listening on 1234
+[2019/03/10 - 05:17:53] Server listening on 1234
+[2019/03/10 - 05:17:57] Server listening on 4321
+[2019/03/10 - 05:18:25] Server listening on 1234
+[2019/03/10 - 05:18:29] Server listening on 4321
+[2019/03/10 - 05:18:33] Server listening on 4321
+[2019/03/10 - 05:19:23] Server listening on 4321
+[2019/03/10 - 05:20:18] Server listening on 1234
+[2019/03/10 - 05:20:31] Server listening on 4321
+[2019/03/10 - 05:21:31] Server listening on 1234
+[2019/03/10 - 05:21:46] Server listening on 1234
+[2019/03/10 - 05:21:52] Server listening on 4321
+[2019/03/10 - 05:22:07] Server listening on 1234
+[2019/03/10 - 05:22:15] Server listening on 4321

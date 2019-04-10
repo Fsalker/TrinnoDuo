@@ -14,6 +14,7 @@ module.exports = async(sequelize) => {
     await models.Lists.belongsTo(models.Boards)
     await models.Cards.belongsTo(models.Lists)
     await sequelize.sync()
+    // await sequelize.sync({force: true})
 
     return models
   }catch(e){console.log(e)}

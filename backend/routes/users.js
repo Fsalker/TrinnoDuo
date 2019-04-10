@@ -37,13 +37,11 @@ module.exports = async(args) => {
 
       let U, S
       if(req.body.auth && req.body.auth.session) {
-        //if(!req.body.auth.session) return res.status(400).end()
         session = req.body.auth.session
-        S = await Sessions.findOne({where: {sessions}})
-        U = await Users.findOne({where: {id: S.dataValues.userId}})
+        S = await Sessions.findOne({where: {session}})
+        U = await S.getUser()
       }
       else if(req.body.data && req.body.data.username && req.body.data.password) {
-        //if(!req.body.data.username || !req.body.data.password) return res.status(400).end()
         username = req.body.data.username
         password = req.body.data.password
         password = hashify(password)

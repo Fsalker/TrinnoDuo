@@ -1,71 +1,82 @@
 module.exports = (args) => {
   let router = require("express").Router()
 
+  let {Cards, Lists, Boards, Sessions, Users} = args.sequelize.models
   router.post(args.apiName, async(req, res) => {
     try{
       let {title} = req.body.data
-      if(!(await args.authentificateUserWithSession(req.client, req.body.auth.session))) return res.status(401).end()
+      if(!(await args.authentificateUserWithSession(Sessions, req.body.auth.session))) return res.status(401).end()
 
-      let user_id = await args.getIdFromSession(req.client, req.body.auth.session)
-      let board_id = (await req.client.query("INSERT INTO boards(user_id, title) VALUES($1, $2) RETURNING id", [user_id, title])).rows[0].id
-      await args.joinUserIntoBoard(req.client, user_id, board_id)
+      let U = await args.getUserFromSession(Sessions, req.body.auth.session)
+      let B = await Boards.create({title, creator_user_id: U.id})
+      await B.addUser(U)
 
-      res.end(JSON.stringify({board_id}))
+      res.end(JSON.stringify({board_id: B.id}))
     }catch(e){ args.catchRouteError({error: e, result: res}) }
   })
 
   router.put(args.apiName, async(req, res) => {
     try{
       let {board_id, title} = req.body.data
-      if(!(await args.authentificateUserWithSession(req.client, req.body.auth.session))) return res.status(401).end()
+      if(!(await args.authentificateUserWithSession(Sessions, req.body.auth.session))) return res.status(401).end()
 
       if(title === undefined)
         return res.status(400).end()
 
-      let user_id = await args.getIdFromSession(req.client, req.body.auth.session)
-      if(!(await args.validateBoardOwnership(req.client, user_id, board_id))) return res.status(403).end()
+      let U = await args.getUserFromSession(Sessions, req.body.auth.session)
+      let B = await Boards.findOne({where: {id: board_id}})
+      if(B.creator_user_id != U.id) return res.status(403).end()
 
-      await req.client.query("UPDATE boards SET title=$1 WHERE id=$2", [title, board_id])
+      await B.update({title}, {where: {id: board_id}})
       res.end()
     }catch(e){ args.catchRouteError({error: e, result: res}) }
   })
 
   router.get(args.apiName + "/:session", async(req, res) => {
     try{
-      if(!(await args.authentificateUserWithSession(req.client, req.params.session))) return res.status(401).end()
+      let {session} = req.params
+      if(!(await args.authentificateUserWithSession(Sessions, session))) return res.status(401).end()
 
-      let user_id = await args.getIdFromSession(req.client, req.params.session)
-      let boards = (await req.client.query("SELECT a.id AS board_id, a.title, a.creation_date, a.last_updated FROM boards a JOIN user_to_board b ON a.id = b.board_id WHERE b.user_id = $1", [user_id])).rows
+      let U = await args.getUserFromSession(Sessions, session)
+      let B = await Boards.findAll({attributes: [["id", "board_id"], "title", ["createdAt", "creation_date"], ["updatedAt", "last_updated"]], where: {creator_user_id: U.id}})
+      B = B.map(board => board.dataValues)
 
-      res.end(JSON.stringify(boards))
+      res.end(JSON.stringify(B))
     }catch(e){ args.catchRouteError({error: e, result: res}) }
   })
 
   router.get(args.apiName + "/:session/:board_id", async(req, res) => {
     try{
-      if(!(await args.authentificateUserWithSession(req.client, req.params.session))) return res.status(401).end()
+      let {session} = req.params
+      if(!(await args.authentificateUserWithSession(Sessions, session))) return res.status(401).end()
       let {board_id} = req.params
 
-      let user_id = await args.getIdFromSession(req.client, req.params.session)
-      if(!(await args.validateBoardParticipation(req.client, user_id, board_id)))
-        return res.status(403).end()
-      let title = (await req.client.query("SELECT title FROM boards WHERE id = $1", [board_id])).rows[0].title
+      let U = await args.getUserFromSession(Sessions, session)
+      let B = await Boards.findOne({where: {id: board_id}})
+      if(B.creator_user_id != U.id) return res.status(403).end()
 
-      res.end(JSON.stringify({title}))
+      res.end(JSON.stringify({title: B.title}))
     }catch(e){ args.catchRouteError({error: e, result: res}) }
   })
 
   router.delete(args.apiName, async(req, res) => {
     try{
       let {board_id} = req.body.data
-      if(!(await args.authentificateUserWithSession(req.client, req.body.auth.session))) return res.status(401).end()
+      if(!(await args.authentificateUserWithSession(Sessions, req.body.auth.session))) return res.status(401).end()
 
-      let user_id = await args.getIdFromSession(req.client, req.body.auth.session)
-      if(!(await args.validateBoardOwnership(req.client, user_id, board_id))) return res.status(403).end()
+      let U = await args.getUserFromSession(Sessions, req.body.auth.session)
+      let B = await Boards.findOne({where: {id: board_id}})
+      if(B.creator_user_id != U.id) return res.status(403).end()
 
-      await req.client.query("DELETE FROM boards WHERE id=$1", [board_id])
-      await req.client.query("DELETE FROM cards WHERE list_id IN(SELECT id FROM lists WHERE board_id = $1)", [board_id])
-      await req.client.query("DELETE FROM lists WHERE board_id = $1", [board_id])
+      let lists = await Lists.findAll({where: {BoardId: board_id}})
+      let listIds = lists.reduce((acc, list) => acc.push(list.id), [])
+      let cards = await Cards.findAll({where: {ListId: listIds}})
+      let cardIds = cards.reduce((acc, card) => acc.push(card.id), [])
+
+      await B.destroy({})
+      await Lists.destroy({where: {id: listIds}})
+      await Cards.destroy({where: {id: cardIds}})
+
       res.end()
     }catch(e){ args.catchRouteError({error: e, result: res}) }
   })

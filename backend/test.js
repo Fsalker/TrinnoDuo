@@ -156,6 +156,7 @@ describe("CRUD APIs", async() => {
       r.should.have.lengthOf(1)
       r[0].board_id.should.be.a("Number")
       r[0].title.should.be.a("String")
+      r[0].creation_date.should.be.a("String")
     })
 
     it("Should get Boards for User 2 (no boards)", async() => {
