@@ -7,9 +7,9 @@ module.exports = (args) => {
       if(!(await args.authentificateUserWithSession(req.client, req.body.auth.session))) return res.status(401).end()
 
       let user_id = await args.getIdFromSession(req.client, req.body.auth.session)
-      let board_id = (await req.client.query("INSERT INTO boards(user_id, title) VALUES($1, $2) RETURNING id", [user_id, title])).rows[0].id
+      console.log(args.generateShortSession())
+      let board_id = (await req.client.query("INSERT INTO boards(id, user_id, title) VALUES($1, $2, $3) RETURNING id", [args.generateShortSession(), user_id, title])).rows[0].id
       await args.joinUserIntoBoard(req.client, user_id, board_id)
-
       res.end(JSON.stringify({board_id}))
     }catch(e){ args.catchRouteError({error: e, result: res}) }
   })

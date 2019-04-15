@@ -9,7 +9,7 @@ module.exports = (args) => {
       let user_id = await args.getIdFromSession(req.client, req.body.auth.session)
       if(!(await args.validateBoardOwnership(req.client, user_id, board_id))) return res.status(403).end()
 
-      let card_id = (await req.client.query("INSERT INTO cards(list_id, title) VALUES($1, $2) RETURNING id AS card_id", [list_id, title])).rows[0].card_id
+      let card_id = (await req.client.query("INSERT INTO cards(id, list_id, title) VALUES($1, $2, $3) RETURNING id AS card_id", [args.generateShortSession(), list_id, title])).rows[0].card_id
 
       res.end(JSON.stringify({card_id}))
     }catch(e){ args.catchRouteError({error: e, result: res}) }

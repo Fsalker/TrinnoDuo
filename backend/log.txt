@@ -1397,3 +1397,100 @@
 [2019/03/10 - 02:14:10] Server listening on 1234
 [2019/03/10 - 02:14:13] Server listening on 4321
 [2019/03/10 - 02:14:16] Server listening on 1234
+[2019/03/15 - 17:12:17] Server listening on undefined
+[2019/03/15 - 17:12:35] Server listening on undefined
+[2019/03/15 - 17:14:49] Server listening on 1234
+[2019/03/15 - 17:14:59] Server listening on 4321
+[2019/03/15 - 17:14:59] error: relation "users" does not exist
+[2019/03/15 - 17:14:59] error: relation "users" does not exist
+[2019/03/15 - 17:14:59] error: relation "users" does not exist
+[2019/03/15 - 17:14:59] error: relation "users" does not exist
+[2019/03/15 - 17:14:59] error: relation "users" does not exist
+[2019/03/15 - 17:14:59] error: relation "users" does not exist
+[2019/03/15 - 17:14:59] error: relation "sessions" does not exist
+[2019/03/15 - 17:14:59] error: relation "sessions" does not exist
+[2019/03/15 - 17:14:59] error: relation "sessions" does not exist
+[2019/03/15 - 17:14:59] error: relation "sessions" does not exist
+[2019/03/15 - 17:14:59] error: relation "sessions" does not exist
+[2019/03/15 - 17:14:59] error: relation "sessions" does not exist
+[2019/03/15 - 17:15:00] error: relation "sessions" does not exist
+[2019/03/15 - 17:15:00] error: relation "sessions" does not exist
+[2019/03/15 - 17:15:00] error: relation "sessions" does not exist
+[2019/03/15 - 17:15:00] error: relation "sessions" does not exist
+[2019/03/15 - 17:15:00] error: relation "sessions" does not exist
+[2019/03/15 - 17:15:00] error: relation "sessions" does not exist
+[2019/03/15 - 17:15:00] error: relation "sessions" does not exist
+[2019/03/15 - 17:15:00] error: relation "sessions" does not exist
+[2019/03/15 - 17:15:00] error: relation "sessions" does not exist
+[2019/03/15 - 17:15:00] error: relation "sessions" does not exist
+[2019/03/15 - 17:15:15] Server listening on 4321
+[2019/03/15 - 17:18:02] Server listening on 4321
+[2019/03/15 - 17:18:02] error: null value in column "id" violates not-null constraint
+[2019/03/15 - 17:18:02] error: operator does not exist: text = integer
+[2019/03/15 - 17:18:02] error: operator does not exist: text = integer
+[2019/03/15 - 17:18:02] error: invalid input syntax for integer: "undefined"
+[2019/03/15 - 17:18:02] TypeError: Cannot read property 'board_id' of undefined
+[2019/03/15 - 17:18:02] error: invalid input syntax for integer: "undefined"
+[2019/03/15 - 17:18:02] TypeError: Cannot read property 'board_id' of undefined
+[2019/03/15 - 17:18:02] TypeError: Cannot read property 'list_id' of undefined
+[2019/03/15 - 17:18:02] TypeError: Cannot read property 'board_id' of undefined
+[2019/03/15 - 17:18:02] TypeError: Cannot read property 'list_id' of undefined
+[2019/03/15 - 17:18:02] TypeError: Cannot read property 'list_id' of undefined
+[2019/03/15 - 17:18:02] TypeError: Cannot read property 'board_id' of undefined
+[2019/03/15 - 17:27:35] Server listening on 4321
+[2019/03/15 - 17:27:36] error: invalid input syntax for integer: "{}"
+[2019/03/15 - 17:27:36] error: operator does not exist: text = integer
+[2019/03/15 - 17:27:36] error: operator does not exist: text = integer
+[2019/03/15 - 17:27:36] error: invalid input syntax for integer: "undefined"
+[2019/03/15 - 17:27:36] TypeError: Cannot read property 'board_id' of undefined
+[2019/03/15 - 17:27:36] error: invalid input syntax for integer: "undefined"
+[2019/03/15 - 17:27:36] TypeError: Cannot read property 'board_id' of undefined
+[2019/03/15 - 17:27:36] TypeError: Cannot read property 'list_id' of undefined
+[2019/03/15 - 17:27:36] TypeError: Cannot read property 'board_id' of undefined
+[2019/03/15 - 17:27:36] TypeError: Cannot read property 'list_id' of undefined
+[2019/03/15 - 17:27:36] TypeError: Cannot read property 'list_id' of undefined
+[2019/03/15 - 17:27:36] TypeError: Cannot read property 'board_id' of undefined
+[2019/03/15 - 17:30:54] Server listening on 4321
+[2019/03/15 - 17:30:54] error: invalid input syntax for integer: "{}"
+[2019/03/15 - 17:30:54] error: operator does not exist: text = integer
+[2019/03/15 - 17:30:54] error: operator does not exist: text = integer
+[2019/03/15 - 17:30:54] error: invalid input syntax for integer: "undefined"
+[2019/03/15 - 17:30:54] TypeError: Cannot read property 'board_id' of undefined
+[2019/03/15 - 17:30:54] error: invalid input syntax for integer: "undefined"
+[2019/03/15 - 17:30:54] TypeError: Cannot read property 'board_id' of undefined
+[2019/03/15 - 17:30:54] TypeError: Cannot read property 'list_id' of undefined
+[2019/03/15 - 17:30:54] TypeError: Cannot read property 'board_id' of undefined
+[2019/03/15 - 17:30:54] TypeError: Cannot read property 'list_id' of undefined
+[2019/03/15 - 17:30:54] TypeError: Cannot read property 'list_id' of undefined
+[2019/03/15 - 17:30:54] TypeError: Cannot read property 'board_id' of undefined
+[2019/03/15 - 17:31:11] Server listening on 4321
+[2019/03/15 - 17:31:11] error: invalid input syntax for integer: "bfea8906"
+[2019/03/15 - 17:31:11] error: operator does not exist: text = integer
+[2019/03/15 - 17:31:11] error: operator does not exist: text = integer
+[2019/03/15 - 17:31:11] error: invalid input syntax for integer: "undefined"
+[2019/03/15 - 17:31:11] TypeError: Cannot read property 'board_id' of undefined
+[2019/03/15 - 17:31:11] error: invalid input syntax for integer: "undefined"
+[2019/03/15 - 17:31:11] TypeError: Cannot read property 'board_id' of undefined
+[2019/03/15 - 17:31:11] TypeError: Cannot read property 'list_id' of undefined
+[2019/03/15 - 17:31:11] TypeError: Cannot read property 'board_id' of undefined
+[2019/03/15 - 17:31:11] TypeError: Cannot read property 'list_id' of undefined
+[2019/03/15 - 17:31:11] TypeError: Cannot read property 'list_id' of undefined
+[2019/03/15 - 17:31:11] TypeError: Cannot read property 'board_id' of undefined
+[2019/03/15 - 17:33:27] Server listening on 4321
+[2019/03/15 - 17:33:27] error: invalid input syntax for integer: "75d76ce6"
+[2019/03/15 - 17:33:27] error: operator does not exist: text = integer
+[2019/03/15 - 17:33:27] error: operator does not exist: text = integer
+[2019/03/15 - 17:33:27] error: invalid input syntax for integer: "undefined"
+[2019/03/15 - 17:33:27] TypeError: Cannot read property 'board_id' of undefined
+[2019/03/15 - 17:33:27] error: invalid input syntax for integer: "undefined"
+[2019/03/15 - 17:33:27] TypeError: Cannot read property 'board_id' of undefined
+[2019/03/15 - 17:33:27] TypeError: Cannot read property 'list_id' of undefined
+[2019/03/15 - 17:33:27] TypeError: Cannot read property 'board_id' of undefined
+[2019/03/15 - 17:33:27] TypeError: Cannot read property 'list_id' of undefined
+[2019/03/15 - 17:33:27] TypeError: Cannot read property 'list_id' of undefined
+[2019/03/15 - 17:33:27] TypeError: Cannot read property 'board_id' of undefined
+[2019/03/15 - 17:33:45] Server listening on 4321
+[2019/03/15 - 17:33:45] error: invalid input syntax for integer: "29383ccd"
+[2019/03/15 - 17:36:20] Server listening on 4321
+[2019/03/15 - 17:36:32] Server listening on 4321
+[2019/03/15 - 17:36:46] Server listening on 4321

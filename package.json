@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "backend-test": "mocha backend/test.js --exit",
+    "backend-test": "mocha backend/test.js --exit -b",
     "backend-nodemon": "nodemon backend/server.js",
     "backend": "node backend/server.js --use_strict",
     "test": "echo \"Error: no test specified\" && exit 1"

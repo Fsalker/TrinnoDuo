@@ -16,6 +16,7 @@ module.exports = {
     console.log(msg)
   },
   hashify: (word) => require("crypto").createHash("sha256").update(word).digest("hex"),
+  generateShortSession: () => require("crypto").randomBytes(4).toString("hex"),
   createSession: async(client, user_id) => {
     let crypto = require("crypto")
     let session = crypto.randomBytes(32).toString("hex")

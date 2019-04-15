@@ -24,7 +24,8 @@ module.exports = {
     )`)
 
     await client.query(`CREATE TABLE boards(
-      id SERIAL PRIMARY KEY,
+      /*id SERIAL PRIMARY KEY,*/
+      id TEXT PRIMARY KEY,
       user_id INT NOT NULL,
       title TEXT NOT NULL,
       creation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -32,16 +33,18 @@ module.exports = {
     )`)
 
     await client.query(`CREATE TABLE lists(
-      id SERIAL PRIMARY KEY,
-      board_id INTEGER NOT NULL,
+      /*id SERIAL PRIMARY KEY,*/
+      id TEXT PRIMARY KEY,
+      board_id TEXT NOT NULL,
       title TEXT NOT NULL,
       creation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
       last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )`)
 
     await client.query(`CREATE TABLE cards(
-      id SERIAL PRIMARY KEY,
-      list_id INTEGER NOT NULL,
+      /*id SERIAL PRIMARY KEY,*/
+      id TEXT PRIMARY KEY,
+      list_id TEXT NOT NULL,
       title TEXT NOT NULL,
       description TEXT DEFAULT '',
       creation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -51,7 +54,7 @@ module.exports = {
     await client.query(`CREATE TABLE user_to_board(
       id SERIAL UNIQUE,
       user_id INTEGER NOT NULL,
-      board_id INTEGER NOT NULL,
+      board_id TEXT NOT NULL,
       creation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
       last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
       PRIMARY KEY (user_id, board_id)

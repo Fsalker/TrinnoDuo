@@ -132,7 +132,7 @@ describe("CRUD APIs", async() => {
       let data = {title: BOARD_TITLE}
       let r = await request({uri, method, json: {auth, data}})
 
-      r.board_id.should.be.a("Number")
+      r.board_id.should.be.a("String")
       BOARD_ID = r.board_id
     })
 
@@ -154,7 +154,7 @@ describe("CRUD APIs", async() => {
       r = JSON.parse(r)
       r.should.be.a("Array")
       r.should.have.lengthOf(1)
-      r[0].board_id.should.be.a("Number")
+      r[0].board_id.should.be.a("String")
       r[0].title.should.be.a("String")
     })
 
@@ -189,7 +189,7 @@ describe("CRUD APIs", async() => {
       let data = {board_id: BOARD_ID, title: LIST_TITLE}
       let r = await request({uri, method, json: {auth, data}})
 
-      r.list_id.should.be.a("Number")
+      r.list_id.should.be.a("String")
       LIST_ID = r.list_id
     })
 
@@ -211,7 +211,7 @@ describe("CRUD APIs", async() => {
       r = JSON.parse(r)
       r.should.be.a("Array")
       r.should.have.lengthOf(1)
-      r[0].list_id.should.be.a("Number")
+      r[0].list_id.should.be.a("String")
       r[0].title.should.equal(LIST_TITLE_NEW)
     })
   })
@@ -225,7 +225,7 @@ describe("CRUD APIs", async() => {
       let data = {list_id: LIST_ID, title: CARD_TITLE}
       let r = await request({uri, method, json: {auth, data}})
 
-      r.card_id.should.be.a("Number")
+      r.card_id.should.be.a("String")
       CARD_ID = r.card_id
     })
 
@@ -247,7 +247,7 @@ describe("CRUD APIs", async() => {
       r = JSON.parse(r)
       r.should.be.a("Array")
       r.should.have.lengthOf(1)
-      r[0].card_id.should.be.a("Number")
+      r[0].card_id.should.be.a("String")
       r[0].title.should.equal(CARD_TITLE_NEW)
     })
 
